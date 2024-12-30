@@ -2,23 +2,20 @@ package Tests;
 
 import PageObjects.HomePage;
 import PageObjects.ProductPage;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 import utils.BaseTest;
 
-public class ProductTest extends BaseTest {
+public class ProductTest_SearchBox extends BaseTest {
 
     PageObjects.HomePage homePage;
     PageObjects.ProductPage productPage;
     @Test
-    public void product() throws InterruptedException {
+    public void searchProductBySearchBox(){
         homePage = new HomePage(driver);
         homePage.click_product();
         productPage = new ProductPage(driver);
-        productPage.allProduct();
-        productPage.scrollToViewProduct();
-        productPage.click_ViewProduct();
-        boolean isAvailable = productPage.verifyTextAvailable();
-        Assert.assertTrue(isAvailable);
+        productPage.enterProductInSearchBox(org.selenium.aj34.utils.configReader.readKey("productName"));
+        productPage.clickSearchIcon();
+        productPage.isSearchProductTextVisible();
     }
 }

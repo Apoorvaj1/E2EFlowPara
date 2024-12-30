@@ -17,7 +17,11 @@ public class ProductPage extends BaseClass {
         return driver.findElement(allProductText).isDisplayed();
     }
 
-    By addToCartLink = By.xpath("(//div[@class=\"productinfo text-center\"]/p[text()=\"Blue Top\"]//parent::div//parent::div//parent::div/a[text()=\"Add to cart\"])[1]");
+    By addToCartLink = By.xpath("(//div[@class=\"productinfo text-center\"]/p[text()=\""+org.selenium.aj34.utils.configReader.readKey("productName")+"\"]//parent::div//parent::div//parent::div/a[text()=\"Add to cart\"])[1]");
+    By productText = By.xpath("//h2[text()=\""+org.selenium.aj34.utils.configReader.readKey("productName")+"\"]");
+    By searchBoxField = By.xpath("//input[@id=\"search_product\"]");
+    By searchIcon = By.xpath("//button[@id=\"submit_search\"]");
+    By searchProductText = By.xpath("//h2[@class=\"title text-center\"][text()=\"Searched Products\"]");
 
     public void click_ViewProduct() throws InterruptedException {
         driver.findElement(with(By.tagName("a")).below(driver.findElement(addToCartLink))).click();
@@ -26,6 +30,27 @@ public class ProductPage extends BaseClass {
 
     public void scrollToViewProduct(){
         scrollToWebElement(driver.findElement(addToCartLink));
+    }
+
+    public boolean verifyTextAvailable(){
+        return driver.findElement(productText).isDisplayed();
+    }
+
+    public void enterProductInSearchBox(String value){
+        driver.findElement(searchBoxField).sendKeys(value);
+    }
+
+    public void clickSearchIcon(){
+        driver.findElement(searchIcon).click();
+    }
+
+    public void isSearchProductTextVisible(){
+        scrollToWebElement(driver.findElement(searchProductText));
+        boolean bool = driver.findElement(searchProductText).isDisplayed();
+        if(bool){
+            String productName = driver.findElement(By.xpath("//div[@class=\"productinfo text-center\"]/p")).getText();
+            System.out.println("Product name is: "+productName);
+        }
     }
 
 
