@@ -5,13 +5,43 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9df1aba4-6558-4f14-bf82-96de90f87021" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/selenium/aj34/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/selenium/aj34/googleTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/PageObjects/ContactUsPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/PageObjects/DashboardPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/PageObjects/HomePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/PageObjects/LoginPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/PageObjects/RegisterPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/commonForAll/BaseClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/selenium/aj34/utils/browserFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/selenium/aj34/utils/configReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/selenium/aj34/utils/dataProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/selenium/aj34/utils/excelReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/selenium/aj34/utils/jsonReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/selenium/aj34/utils/jsonReaderInArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/ContactusTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/LoginTestInvalidCred.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/LoginTestValidCred.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/LogoutTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/RegisterExistingUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/RegisterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/selenium/aj34/bankDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/selenium/aj34/orangeHRM.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/utils/BaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/DemoPlaces.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/abc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/abc1.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/config.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/sample-docx-files-sample4.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/0bb53071-4544-4467-8c4c-1ae826b47b31-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/0fe33573-ee93-42e8-b073-7ea5962f103b-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/49edd2d2-a59f-4ab7-bb7b-f780cf648954-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/fc0254bb-eb62-41e3-8bca-c340a5320aad-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/selenium/aj34/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/selenium/aj34/googleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/selenium/aj34/googleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,22 +58,36 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2qk7v1tSlPyHKP6M9lNPxZeqL7j" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;QA&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Selenium Project/E2EFramwork/src/test/resources&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Selenium Project\E2EFramwork\src\test\resources" />
+      <recent name="D:\Selenium Project\E2EFramwork" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Tests" />
+      <recent name="org.selenium.aj34.utils" />
+      <recent name="Data" />
+      <recent name="org.selenium.aj34" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
