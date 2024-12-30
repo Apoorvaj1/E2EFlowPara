@@ -12,6 +12,7 @@
             <class name="Tests.ProductTest"/>
             <class name="Tests.ProductTest_SearchBox"/>
             <class name="Tests.SubscriptionTest"/>
+            <class name="Tests.SubscriptionCartTest"/>
         </classes>
     </test>
 </suite>

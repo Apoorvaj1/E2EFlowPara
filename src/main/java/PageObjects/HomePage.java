@@ -14,6 +14,7 @@ public class HomePage extends BaseClass {
     By productButton = By.xpath("//ul[@class=\"nav navbar-nav\"]/li[2]");
     By subscriptionBox = By.xpath("//input[@id=\"susbscribe_email\"]");
     By subscriptionClickIcon = By.xpath("//button[@id=\"subscribe\"]");
+    By cartButton = By.xpath("//ul[@class=\"nav navbar-nav\"]/li/a[normalize-space()=\"Cart\"]");
 
     public RegisterPage click_SignUpLogin(){
         driver.findElement(signUpLoginButton).click();
@@ -33,6 +34,10 @@ public class HomePage extends BaseClass {
         driver.findElement(subscriptionBox).sendKeys(value);
         driver.findElement(subscriptionClickIcon).click();
         Thread.sleep(2000);
+    }
+
+    public void clickCart(){
+        driver.findElement(cartButton).click();
     }
 
 }

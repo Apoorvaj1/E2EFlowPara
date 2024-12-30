@@ -2,6 +2,8 @@ package Tests;
 
 import PageObjects.LoginPage;
 import net.datafaker.Faker;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import PageObjects.DashboardPage;
@@ -19,9 +21,11 @@ public class RegisterTest extends BaseTest {
         Faker faker = new Faker();
         public static String firstName = null;
         public static String emailAddress = null;
+        private static final Logger logger = LogManager.getLogger(RegisterTest.class);
 
         @Test
         public void createUserAccount(){
+            logger.info("--------------Started-------------------");
            homepage = new HomePage(driver);
            homepage.click_SignUpLogin();
            page = new RegisterPage(driver);
@@ -54,6 +58,6 @@ public class RegisterTest extends BaseTest {
            dashboardPage = new DashboardPage(driver);
            Assert.assertTrue(dashboardPage.deleteAccountOption());
            loginPage = dashboardPage.clickLogout();
-
+            logger.info("--------------FINISHED-------------------");
         }
 }

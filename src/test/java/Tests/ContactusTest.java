@@ -4,6 +4,8 @@ import PageObjects.ContactUsPage;
 import PageObjects.HomePage;
 import commonForAll.BaseClass;
 import net.datafaker.Faker;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import utils.BaseTest;
@@ -16,8 +18,10 @@ public class ContactusTest extends BaseTest {
     PageObjects.ContactUsPage contactUsPage;
 
     Faker faker = new Faker();
+    private static final Logger logger = LogManager.getLogger(ContactusTest.class);
     @Test
     public void contactDetails() throws AWTException, InterruptedException {
+        logger.info("--------------Started-------------------");
         homePage = new HomePage(driver);
         homePage.click_contactUs();
         contactUsPage = new ContactUsPage(driver);
@@ -31,5 +35,6 @@ public class ContactusTest extends BaseTest {
         String message = contactUsPage.confirmMessage();
         Assert.assertEquals(message,"Success! Your details have been submitted successfully.");
         Thread.sleep(2000);
+        logger.info("--------------FINISHED-------------------");
     }
 }
