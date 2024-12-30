@@ -1,9 +1,7 @@
 package commonForAll;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -59,7 +57,7 @@ public class BaseClass {
     }
 
     public static void uploadFile() throws AWTException {
-        StringSelection selection = new StringSelection(System.getProperty("user.dir")+"/src/test/resources/sample-docx-files-sample4.docx");
+        StringSelection selection = new StringSelection(org.selenium.aj34.utils.configReader.readKey("file"));
         Toolkit.getDefaultToolkit().getSystemClipboard().setContents(selection,null);
         Robot robot = new Robot();
         robot.keyPress(KeyEvent.VK_HOME);
@@ -76,6 +74,26 @@ public class BaseClass {
 
         robot.delay(2000);
 
+    }
+
+    public void acceptPopup(){
+        Alert alert = driver.switchTo().alert();
+        alert.accept();
+    }
+
+    public void dismissPopup(){
+        Alert alert = driver.switchTo().alert();
+        alert.dismiss();
+    }
+
+    public void enterDataPopup(String value){
+        Alert alert = driver.switchTo().alert();
+        alert.sendKeys(value);
+    }
+
+    public void isAlertPresent(){
+        WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(20));
+        wait.until(ExpectedConditions.alertIsPresent());
     }
 
 
