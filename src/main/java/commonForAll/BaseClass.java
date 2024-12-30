@@ -47,9 +47,9 @@ public class BaseClass {
         return driver.findElements(locator);
     }
 
-    protected void scrollToBottom() {
-        jse.executeScript("scrollBy(0,2500)");
-    }
+//    protected void scrollToBottom() {
+//        jse.executeScript("scrollBy(0,2500)");
+//    }
 
     protected void selectValue(By ele,String value){
         select = new Select(driver.findElement(ele));
@@ -99,6 +99,11 @@ public class BaseClass {
     public void scrollToWebElement(WebElement ele){
         jse = (JavascriptExecutor)driver;
         jse.executeScript("arguments[0].scrollIntoView(true);",ele);
+    }
+
+    public void scrollToBottom(){
+        jse = (JavascriptExecutor)driver;
+        jse.executeScript("window.scrollTo(0,document.body.scrollHeight);");
     }
 
 
