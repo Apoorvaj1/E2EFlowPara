@@ -11,6 +11,7 @@ public class HomePage extends BaseClass {
     }
     By signUpLoginButton = By.xpath("//ul[@class=\"nav navbar-nav\"]/li/a[normalize-space()=\"Signup / Login\"]");
     By contactUsButton = By.xpath("//ul[@class=\"nav navbar-nav\"]/li/a[normalize-space()=\"Contact us\"]");
+    By productButton = By.xpath("//ul[@class=\"nav navbar-nav\"]/li[2]");
 
     public RegisterPage click_SignUpLogin(){
         driver.findElement(signUpLoginButton).click();
@@ -20,4 +21,9 @@ public class HomePage extends BaseClass {
     public void click_contactUs(){
         driver.findElement(contactUsButton).click();
     }
+
+    public void click_product(){
+        driver.findElement(productButton).click();
+    }
+
 }

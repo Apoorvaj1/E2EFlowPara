@@ -96,6 +96,11 @@ public class BaseClass {
         wait.until(ExpectedConditions.alertIsPresent());
     }
 
+    public void scrollToWebElement(WebElement ele){
+        jse = (JavascriptExecutor)driver;
+        jse.executeScript("arguments[0].scrollIntoView(true);",ele);
+    }
+
 
 
 }

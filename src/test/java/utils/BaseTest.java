@@ -35,6 +35,7 @@ public class BaseTest {
     public void initializeBrowser(){
         driver = init(org.selenium.aj34.utils.configReader.readKey("browser"));
         org.selenium.aj34.utils.browserFactory.setDriver(driver);
+        driver = org.selenium.aj34.utils.browserFactory.getDriver();
         driver.get(org.selenium.aj34.utils.configReader.readKey("homepage(URL)"));
     }
 
