@@ -4,10 +4,10 @@
     <test verbose="2" name="D:/Selenium Project/E2EFramework">
         <classes>
             <class name="Tests.RegisterTest"/>
-<!--            <class name="Tests.LoginTestValidCred"/>-->
-<!--            <class name="Tests.LoginTestInvalidCred"/>-->
-<!--            <class name="Tests.LogoutTest"/>-->
-<!--            <class name="Tests.RegisterExistingUser"/>-->
+            <class name="Tests.LoginTestValidCred"/>
+            <class name="Tests.LoginTestInvalidCred"/>
+            <class name="Tests.LogoutTest"/>
+            <class name="Tests.RegisterExistingUser"/>
             <class name="Tests.ContactusTest"/>
         </classes>
     </test>
