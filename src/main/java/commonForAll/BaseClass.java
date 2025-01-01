@@ -106,6 +106,11 @@ public class BaseClass {
         jse.executeScript("window.scrollTo(0,document.body.scrollHeight);");
     }
 
+    public void verifyPresenceOfElement(By by){
+        wait = new WebDriverWait(driver,Duration.ofSeconds(20));
+        wait.until(ExpectedConditions.presenceOfElementLocated(by));
+    }
+
 
 
 }

@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="15" passed="15" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-01-01T13:13:45 IST" name="All Test Suite" finished-at="2025-01-01T13:18:05 IST" duration-ms="260428">
+    <groups>
+    </groups>
+    <test started-at="2025-01-01T13:13:45 IST" name="D:/Selenium Project/E2EFramework" finished-at="2025-01-01T13:16:54 IST" duration-ms="189068">
+      <class name="Tests.RegisterTest">
+        <test-method is-config="true" signature="initializeBrowser()[pri:0, instance:Tests.RegisterTest@6babffb5]" started-at="2025-01-01T13:13:45 IST" name="initializeBrowser" finished-at="2025-01-01T13:13:52 IST" duration-ms="7533" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeBrowser -->
+        <test-method signature="createUserAccount()[pri:0, instance:Tests.RegisterTest@6babffb5]" started-at="2025-01-01T13:13:52 IST" name="createUserAccount" finished-at="2025-01-01T13:14:05 IST" duration-ms="12965" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createUserAccount -->
+        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:Tests.RegisterTest@6babffb5]" started-at="2025-01-01T13:14:05 IST" name="tearDownMethod" finished-at="2025-01-01T13:14:05 IST" duration-ms="7" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=createUserAccount status=SUCCESS method=RegisterTest.createUserAccount()[pri:0, instance:Tests.RegisterTest@6babffb5] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.RegisterTest@6babffb5]" started-at="2025-01-01T13:14:05 IST" name="tearDown" finished-at="2025-01-01T13:14:07 IST" duration-ms="1488" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Tests.RegisterTest -->
+      <class name="Tests.RegisterExistingUser">
+        <test-method is-config="true" signature="initializeBrowser()[pri:0, instance:Tests.RegisterExistingUser@606a1bc4]" started-at="2025-01-01T13:15:03 IST" name="initializeBrowser" finished-at="2025-01-01T13:15:16 IST" duration-ms="12984" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeBrowser -->
+        <test-method signature="register()[pri:0, instance:Tests.RegisterExistingUser@606a1bc4]" started-at="2025-01-01T13:15:16 IST" name="register" finished-at="2025-01-01T13:15:19 IST" duration-ms="3121" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- register -->
+        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:Tests.RegisterExistingUser@606a1bc4]" started-at="2025-01-01T13:15:19 IST" name="tearDownMethod" finished-at="2025-01-01T13:15:19 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=register status=SUCCESS method=RegisterExistingUser.register()[pri:0, instance:Tests.RegisterExistingUser@606a1bc4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.RegisterExistingUser@606a1bc4]" started-at="2025-01-01T13:15:19 IST" name="tearDown" finished-at="2025-01-01T13:15:20 IST" duration-ms="1294" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Tests.RegisterExistingUser -->
+      <class name="Tests.LogoutTest">
+        <test-method is-config="true" signature="initializeBrowser()[pri:0, instance:Tests.LogoutTest@77f4c040]" started-at="2025-01-01T13:14:49 IST" name="initializeBrowser" finished-at="2025-01-01T13:14:57 IST" duration-ms="7616" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeBrowser -->
+        <test-method signature="login()[pri:0, instance:Tests.LogoutTest@77f4c040]" started-at="2025-01-01T13:14:57 IST" name="login" finished-at="2025-01-01T13:15:02 IST" duration-ms="4658" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:Tests.LogoutTest@77f4c040]" started-at="2025-01-01T13:15:02 IST" name="tearDownMethod" finished-at="2025-01-01T13:15:02 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=login status=SUCCESS method=LogoutTest.login()[pri:0, instance:Tests.LogoutTest@77f4c040] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.LogoutTest@77f4c040]" started-at="2025-01-01T13:15:02 IST" name="tearDown" finished-at="2025-01-01T13:15:03 IST" duration-ms="1283" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Tests.LogoutTest -->
+      <class name="Tests.LoginTestValidCred">
+        <test-method is-config="true" signature="initializeBrowser()[pri:0, instance:Tests.LoginTestValidCred@7f6329cb]" started-at="2025-01-01T13:14:07 IST" name="initializeBrowser" finished-at="2025-01-01T13:14:16 IST" duration-ms="9125" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeBrowser -->
+        <test-method signature="login()[pri:0, instance:Tests.LoginTestValidCred@7f6329cb]" started-at="2025-01-01T13:14:16 IST" name="login" finished-at="2025-01-01T13:14:37 IST" duration-ms="21408" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:Tests.LoginTestValidCred@7f6329cb]" started-at="2025-01-01T13:14:37 IST" name="tearDownMethod" finished-at="2025-01-01T13:14:37 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=login status=SUCCESS method=LoginTestValidCred.login()[pri:0, instance:Tests.LoginTestValidCred@7f6329cb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.LoginTestValidCred@7f6329cb]" started-at="2025-01-01T13:14:37 IST" name="tearDown" finished-at="2025-01-01T13:14:39 IST" duration-ms="1335" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Tests.LoginTestValidCred -->
+      <class name="Tests.SubscriptionCartTest">
+        <test-method is-config="true" signature="initializeBrowser()[pri:0, instance:Tests.SubscriptionCartTest@29896529]" started-at="2025-01-01T13:16:40 IST" name="initializeBrowser" finished-at="2025-01-01T13:16:48 IST" duration-ms="7228" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeBrowser -->
+        <test-method signature="subscriptionInsideCart()[pri:0, instance:Tests.SubscriptionCartTest@29896529]" started-at="2025-01-01T13:16:48 IST" name="subscriptionInsideCart" finished-at="2025-01-01T13:16:52 IST" duration-ms="4723" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- subscriptionInsideCart -->
+        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:Tests.SubscriptionCartTest@29896529]" started-at="2025-01-01T13:16:52 IST" name="tearDownMethod" finished-at="2025-01-01T13:16:52 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=subscriptionInsideCart status=SUCCESS method=SubscriptionCartTest.subscriptionInsideCart()[pri:0, instance:Tests.SubscriptionCartTest@29896529] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.SubscriptionCartTest@29896529]" started-at="2025-01-01T13:16:52 IST" name="tearDown" finished-at="2025-01-01T13:16:54 IST" duration-ms="1390" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Tests.SubscriptionCartTest -->
+      <class name="Tests.ProductTest">
+        <test-method is-config="true" signature="initializeBrowser()[pri:0, instance:Tests.ProductTest@44dc7b7d]" started-at="2025-01-01T13:15:54 IST" name="initializeBrowser" finished-at="2025-01-01T13:16:01 IST" duration-ms="6491" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeBrowser -->
+        <test-method signature="addProductAndVerify()[pri:0, instance:Tests.ProductTest@44dc7b7d]" started-at="2025-01-01T13:16:01 IST" name="addProductAndVerify" finished-at="2025-01-01T13:16:13 IST" duration-ms="12687" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addProductAndVerify -->
+        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:Tests.ProductTest@44dc7b7d]" started-at="2025-01-01T13:16:13 IST" name="tearDownMethod" finished-at="2025-01-01T13:16:13 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=addProductAndVerify status=SUCCESS method=ProductTest.addProductAndVerify()[pri:0, instance:Tests.ProductTest@44dc7b7d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.ProductTest@44dc7b7d]" started-at="2025-01-01T13:16:13 IST" name="tearDown" finished-at="2025-01-01T13:16:15 IST" duration-ms="1318" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Tests.ProductTest -->
+      <class name="Tests.SubscriptionTest">
+        <test-method is-config="true" signature="initializeBrowser()[pri:0, instance:Tests.SubscriptionTest@25ffd826]" started-at="2025-01-01T13:16:29 IST" name="initializeBrowser" finished-at="2025-01-01T13:16:37 IST" duration-ms="7404" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeBrowser -->
+        <test-method signature="subscription()[pri:0, instance:Tests.SubscriptionTest@25ffd826]" started-at="2025-01-01T13:16:37 IST" name="subscription" finished-at="2025-01-01T13:16:39 IST" duration-ms="2257" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- subscription -->
+        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:Tests.SubscriptionTest@25ffd826]" started-at="2025-01-01T13:16:39 IST" name="tearDownMethod" finished-at="2025-01-01T13:16:39 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=subscription status=SUCCESS method=SubscriptionTest.subscription()[pri:0, instance:Tests.SubscriptionTest@25ffd826] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.SubscriptionTest@25ffd826]" started-at="2025-01-01T13:16:39 IST" name="tearDown" finished-at="2025-01-01T13:16:40 IST" duration-ms="1278" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Tests.SubscriptionTest -->
+      <class name="Tests.LoginTestInvalidCred">
+        <test-method is-config="true" signature="initializeBrowser()[pri:0, instance:Tests.LoginTestInvalidCred@4b8137c5]" started-at="2025-01-01T13:14:39 IST" name="initializeBrowser" finished-at="2025-01-01T13:14:43 IST" duration-ms="4128" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeBrowser -->
+        <test-method signature="login()[pri:0, instance:Tests.LoginTestInvalidCred@4b8137c5]" started-at="2025-01-01T13:14:43 IST" name="login" finished-at="2025-01-01T13:14:48 IST" duration-ms="5105" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:Tests.LoginTestInvalidCred@4b8137c5]" started-at="2025-01-01T13:14:48 IST" name="tearDownMethod" finished-at="2025-01-01T13:14:48 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=login status=SUCCESS method=LoginTestInvalidCred.login()[pri:0, instance:Tests.LoginTestInvalidCred@4b8137c5] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.LoginTestInvalidCred@4b8137c5]" started-at="2025-01-01T13:14:48 IST" name="tearDown" finished-at="2025-01-01T13:14:49 IST" duration-ms="1275" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Tests.LoginTestInvalidCred -->
+      <class name="Tests.ContactusTest">
+        <test-method is-config="true" signature="initializeBrowser()[pri:0, instance:Tests.ContactusTest@6a15b73]" started-at="2025-01-01T13:15:20 IST" name="initializeBrowser" finished-at="2025-01-01T13:15:26 IST" duration-ms="5777" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeBrowser -->
+        <test-method signature="contactDetails()[pri:0, instance:Tests.ContactusTest@6a15b73]" started-at="2025-01-01T13:15:26 IST" name="contactDetails" finished-at="2025-01-01T13:15:53 IST" duration-ms="26608" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- contactDetails -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.ContactusTest@6a15b73]" started-at="2025-01-01T13:15:53 IST" name="tearDown" finished-at="2025-01-01T13:15:54 IST" duration-ms="1378" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:Tests.ContactusTest@6a15b73]" started-at="2025-01-01T13:15:53 IST" name="tearDownMethod" finished-at="2025-01-01T13:15:53 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=contactDetails status=SUCCESS method=ContactusTest.contactDetails()[pri:0, instance:Tests.ContactusTest@6a15b73] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+      </class> <!-- Tests.ContactusTest -->
+      <class name="Tests.ProductTest_SearchBox">
+        <test-method is-config="true" signature="initializeBrowser()[pri:0, instance:Tests.ProductTest_SearchBox@15fb4566]" started-at="2025-01-01T13:16:15 IST" name="initializeBrowser" finished-at="2025-01-01T13:16:24 IST" duration-ms="9903" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeBrowser -->
+        <test-method signature="searchProductBySearchBox()[pri:0, instance:Tests.ProductTest_SearchBox@15fb4566]" started-at="2025-01-01T13:16:24 IST" name="searchProductBySearchBox" finished-at="2025-01-01T13:16:28 IST" duration-ms="3641" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchProductBySearchBox -->
+        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:Tests.ProductTest_SearchBox@15fb4566]" started-at="2025-01-01T13:16:28 IST" name="tearDownMethod" finished-at="2025-01-01T13:16:28 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=searchProductBySearchBox status=SUCCESS method=ProductTest_SearchBox.searchProductBySearchBox()[pri:0, instance:Tests.ProductTest_SearchBox@15fb4566] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.ProductTest_SearchBox@15fb4566]" started-at="2025-01-01T13:16:28 IST" name="tearDown" finished-at="2025-01-01T13:16:29 IST" duration-ms="1323" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Tests.ProductTest_SearchBox -->
+    </test> <!-- D:/Selenium Project/E2EFramework -->
+    <test started-at="2025-01-01T13:16:54 IST" name="demo" finished-at="2025-01-01T13:18:05 IST" duration-ms="71287">
+      <class name="Tests.PaymentTest">
+        <test-method is-config="true" signature="initializeBrowser()[pri:0, instance:Tests.PaymentTest@ee8e7ff]" started-at="2025-01-01T13:17:47 IST" name="initializeBrowser" finished-at="2025-01-01T13:17:53 IST" duration-ms="6567" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeBrowser -->
+        <test-method signature="paymentDetails()[pri:0, instance:Tests.PaymentTest@ee8e7ff]" started-at="2025-01-01T13:17:53 IST" name="paymentDetails" finished-at="2025-01-01T13:18:04 IST" duration-ms="10386" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- paymentDetails -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.PaymentTest@ee8e7ff]" started-at="2025-01-01T13:18:04 IST" name="tearDown" finished-at="2025-01-01T13:18:05 IST" duration-ms="1399" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:Tests.PaymentTest@ee8e7ff]" started-at="2025-01-01T13:18:04 IST" name="tearDownMethod" finished-at="2025-01-01T13:18:04 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=paymentDetails status=SUCCESS method=PaymentTest.paymentDetails()[pri:0, instance:Tests.PaymentTest@ee8e7ff] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+      </class> <!-- Tests.PaymentTest -->
+      <class name="Tests.RegisterTest">
+        <test-method is-config="true" signature="initializeBrowser()[pri:0, instance:Tests.RegisterTest@7bbfc5ff]" started-at="2025-01-01T13:16:54 IST" name="initializeBrowser" finished-at="2025-01-01T13:17:00 IST" duration-ms="6045" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeBrowser -->
+        <test-method signature="createUserAccount()[pri:0, instance:Tests.RegisterTest@7bbfc5ff]" started-at="2025-01-01T13:17:00 IST" name="createUserAccount" finished-at="2025-01-01T13:17:10 IST" duration-ms="10431" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createUserAccount -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.RegisterTest@7bbfc5ff]" started-at="2025-01-01T13:17:10 IST" name="tearDown" finished-at="2025-01-01T13:17:12 IST" duration-ms="1337" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:Tests.RegisterTest@7bbfc5ff]" started-at="2025-01-01T13:17:10 IST" name="tearDownMethod" finished-at="2025-01-01T13:17:10 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=createUserAccount status=SUCCESS method=RegisterTest.createUserAccount()[pri:0, instance:Tests.RegisterTest@7bbfc5ff] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+      </class> <!-- Tests.RegisterTest -->
+      <class name="Tests.ProductTest">
+        <test-method is-config="true" signature="initializeBrowser()[pri:0, instance:Tests.ProductTest@7a682d35]" started-at="2025-01-01T13:17:12 IST" name="initializeBrowser" finished-at="2025-01-01T13:17:18 IST" duration-ms="6198" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeBrowser -->
+        <test-method signature="addProductAndVerify()[pri:0, instance:Tests.ProductTest@7a682d35]" started-at="2025-01-01T13:17:18 IST" name="addProductAndVerify" finished-at="2025-01-01T13:17:31 IST" duration-ms="13500" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addProductAndVerify -->
+        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:Tests.ProductTest@7a682d35]" started-at="2025-01-01T13:17:31 IST" name="tearDownMethod" finished-at="2025-01-01T13:17:31 IST" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=addProductAndVerify status=SUCCESS method=ProductTest.addProductAndVerify()[pri:0, instance:Tests.ProductTest@7a682d35] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+        <test-method signature="checkoutDetails()[pri:0, instance:Tests.ProductTest@7a682d35]" started-at="2025-01-01T13:17:31 IST" name="checkoutDetails" finished-at="2025-01-01T13:17:35 IST" duration-ms="3732" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkoutDetails -->
+        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:Tests.ProductTest@7a682d35]" started-at="2025-01-01T13:17:35 IST" name="tearDownMethod" finished-at="2025-01-01T13:17:35 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkoutDetails status=SUCCESS method=ProductTest.checkoutDetails()[pri:0, instance:Tests.ProductTest@7a682d35] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+        <test-method signature="placeOrder()[pri:0, instance:Tests.ProductTest@7a682d35]" started-at="2025-01-01T13:17:35 IST" name="placeOrder" finished-at="2025-01-01T13:17:45 IST" duration-ms="10225" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- placeOrder -->
+        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:Tests.ProductTest@7a682d35]" started-at="2025-01-01T13:17:45 IST" name="tearDownMethod" finished-at="2025-01-01T13:17:45 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=placeOrder status=SUCCESS method=ProductTest.placeOrder()[pri:0, instance:Tests.ProductTest@7a682d35] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.ProductTest@7a682d35]" started-at="2025-01-01T13:17:45 IST" name="tearDown" finished-at="2025-01-01T13:17:47 IST" duration-ms="1443" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Tests.ProductTest -->
+    </test> <!-- demo -->
+  </suite> <!-- All Test Suite -->
+</testng-results>

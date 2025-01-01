@@ -5,18 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9df1aba4-6558-4f14-bf82-96de90f87021" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/SubscriptionCartTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/PageObjects/PaymentPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/selenium/aj34/utils/listener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/selenium/aj34/utils/takingScreenshot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/PaymentTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/ContactusTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/ContactusTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/LoginTestInvalidCred.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/LoginTestInvalidCred.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/LoginTestValidCred.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/LoginTestValidCred.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/LogoutTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/LogoutTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log4j2/log4j2-test-automation.log" beforeDir="false" afterPath="$PROJECT_DIR$/log4j2/log4j2-test-automation.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/ProductPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/ProductPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/commonForAll/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commonForAll/BaseClass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Tests/ProductTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/ProductTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/ProductTest_SearchBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/ProductTest_SearchBox.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/RegisterExistingUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/RegisterExistingUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/RegisterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/RegisterTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/SubscriptionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/SubscriptionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utils/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/config.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -66,6 +65,56 @@
       <recent name="Data" />
       <recent name="org.selenium.aj34" />
     </key>
+  </component>
+  <component name="RunManager" selected="TestNG.D:/Selenium Project/E2EFramwork/testng.xml">
+    <configuration name="D:/Selenium Project/E2EFramwork/testng.xml" type="TestNG" nameIsGenerated="true">
+      <module name="E2EFramework" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="USE_DEFAULT_REPORTERS" value="true" />
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Unnamed" type="TestNG" nameIsGenerated="true">
+      <module name="E2EFramework" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="true" />
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners>
+        <listener class="org.selenium.aj34.utils.listener" />
+      </listeners>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="TestNG.D:/Selenium Project/E2EFramwork/testng.xml" />
+      <item itemvalue="TestNG.Unnamed" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">

@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
-    <test verbose="2" name="D:/Selenium Project/E2EFramework">
+    <listeners>
+        <listener class-name="org.selenium.aj34.utils.listener"/>
+    </listeners>
+    <test name="D:/Selenium Project/E2EFramework">
         <classes>
             <class name="Tests.RegisterTest"/>
             <class name="Tests.LoginTestValidCred"/>
@@ -13,6 +16,27 @@
             <class name="Tests.ProductTest_SearchBox"/>
             <class name="Tests.SubscriptionTest"/>
             <class name="Tests.SubscriptionCartTest"/>
+            <class name="Tests.ProductTest">
+                <methods>
+                    <include name="addProductAndVerify"/>
+                </methods>
+            </class>
+
+        </classes>
+    </test>
+
+    <test name="demo">
+        <classes>
+            <class name="Tests.RegisterTest"/>
+            <class name="Tests.ProductTest">
+                <methods>
+                    <include name="addProductAndVerify"/>
+                    <include name="checkoutDetails"/>
+                    <include name="placeOrder"/>
+                </methods>
+            </class>
+            <class name="Tests.PaymentTest"/>
+
         </classes>
     </test>
 </suite>
