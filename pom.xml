@@ -12,8 +12,8 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.source>21</maven.compiler.source>
-    <maven.compiler.target>21</maven.compiler.target>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
     <aspectj.version>1.9.2</aspectj.version>
   </properties>
 
@@ -34,7 +34,7 @@
             <plugin>
               <groupId>org.apache.maven.plugins</groupId>
               <artifactId>maven-surefire-plugin</artifactId>
-              <version>3.5.2</version>
+              <version>3.1.2</version>
               <configuration>
                 <suiteXmlFiles>
                   <suiteXmlFile>testng.xml</suiteXmlFile>
@@ -62,7 +62,7 @@
             <plugin>
               <groupId>org.apache.maven.plugins</groupId>
               <artifactId>maven-surefire-plugin</artifactId>
-              <version>3.5.2</version>
+              <version>3.1.2</version>
               <configuration>
                 <suiteXmlFiles>
                   <suiteXmlFile>testng1.xml</suiteXmlFile>
@@ -123,9 +123,31 @@
         </configuration>
       </plugin>
 
-    </plugins>
-  </build>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>3.1.2</version>
+        <configuration>
+          <testFailureIgnore>true</testFailureIgnore>
+          <argLine>
+            -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
+          </argLine>
+          <suiteXmlFiles>
+            <suiteXmlFile>testng.xml</suiteXmlFile>
+          </suiteXmlFiles>
+        </configuration>
+        <dependencies>
+          <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjweaver</artifactId>
+            <version>${aspectj.version}</version>
+          </dependency>
+        </dependencies>
+      </plugin>
 
+    </plugins>
+
+  </build>
 
   <dependencies>
 

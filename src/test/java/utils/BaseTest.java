@@ -13,7 +13,7 @@ import java.time.Duration;
 
 public class BaseTest {
 
-    protected WebDriver driver;
+    public static WebDriver driver;
     public WebDriver init(String browserName){
         switch (browserName.toLowerCase()){
             case "edge":

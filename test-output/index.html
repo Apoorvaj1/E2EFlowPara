@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 8 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-All_Test_Suite" class="navigator-link">
-              <span class="suite-name border-passed">All Test Suite</span>
+              <span class="suite-name border-failed">All Test Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,56 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">15 methods,   15 passed</span>
+                    <span class="method-stats">15 methods, 8 failed,   7 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-All_Test_Suite" class="hide-methods failed suite-All_Test_Suite"> (hide)</a> <!-- hide-methods failed suite-All_Test_Suite -->
+                      <a href="#" panel-name="suite-All_Test_Suite" class="show-methods failed suite-All_Test_Suite"> (show)</a> <!-- show-methods failed suite-All_Test_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-All_Test_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="Tests.ProductTest" class="method navigator-link" hash-for-method="addProductAndVerify">addProductAndVerify</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="Tests.ProductTest" class="method navigator-link" hash-for-method="addProductAndVerify">addProductAndVerify</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="Tests.ProductTest" class="method navigator-link" hash-for-method="checkoutDetails">checkoutDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="Tests.RegisterTest" class="method navigator-link" hash-for-method="createUserAccount">createUserAccount</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="Tests.RegisterTest" class="method navigator-link" hash-for-method="createUserAccount">createUserAccount</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="Tests.LogoutTest" class="method navigator-link" hash-for-method="login">login</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="Tests.PaymentTest" class="method navigator-link" hash-for-method="paymentDetails">paymentDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="Tests.ProductTest" class="method navigator-link" hash-for-method="placeOrder">placeOrder</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-All_Test_Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,32 +152,7 @@
                     <div class="method-list-content passed suite-All_Test_Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-All_Test_Suite" title="Tests.ProductTest" class="method navigator-link" hash-for-method="addProductAndVerify">addProductAndVerify</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-All_Test_Suite" title="Tests.ProductTest" class="method navigator-link" hash-for-method="addProductAndVerify">addProductAndVerify</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-All_Test_Suite" title="Tests.ProductTest" class="method navigator-link" hash-for-method="checkoutDetails">checkoutDetails</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-All_Test_Suite" title="Tests.ContactusTest" class="method navigator-link" hash-for-method="contactDetails">contactDetails</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-All_Test_Suite" title="Tests.RegisterTest" class="method navigator-link" hash-for-method="createUserAccount">createUserAccount</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-All_Test_Suite" title="Tests.RegisterTest" class="method navigator-link" hash-for-method="createUserAccount">createUserAccount</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -139,21 +163,6 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-All_Test_Suite" title="Tests.LoginTestValidCred" class="method navigator-link" hash-for-method="login">login</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-All_Test_Suite" title="Tests.LogoutTest" class="method navigator-link" hash-for-method="login">login</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-All_Test_Suite" title="Tests.PaymentTest" class="method navigator-link" hash-for-method="paymentDetails">paymentDetails</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-All_Test_Suite" title="Tests.ProductTest" class="method navigator-link" hash-for-method="placeOrder">placeOrder</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -188,6 +197,321 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-All_Test_Suite" class="panel All_Test_Suite">
+          <div class="suite-All_Test_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Tests.ProductTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addProductAndVerify">
+                  </a> <!-- addProductAndVerify -->
+                  <span class="method-name">addProductAndVerify</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a data-product-id=&quot;1&quot; class=&quot;btn btn-default add-to-cart&quot;&gt;...&lt;/a&gt; is not clickable at point (494, 16). Other element would receive the click: &lt;iframe id=&quot;aswift_6&quot; name=&quot;aswift_6&quot; browsingtopics=&quot;true&quot; style=&quot;width: 100vw !important; height: 100vh !important; inset: 0px auto auto 0px !important; position: absolute !important; clear: none !important; display: inline !important; float: none !important; margin: 0px !important; max-height: none !important; max-width: none !important; opacity: 1 !important; overflow: visible !important; padding: 0px !important; vertical-align: baseline !important; visibility: visible !important; z-index: auto !important;&quot; sandbox=&quot;allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation&quot; width=&quot;&quot; height=&quot;&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; vspace=&quot;0&quot; hspace=&quot;0&quot; allowtransparency=&quot;true&quot; scrolling=&quot;no&quot; allow=&quot;attribution-reporting; run-ad-auction&quot; src=&quot;https://googleads.g.doubleclick.net/pagead/html/r20241212/r20190131/zrt_lookup_fy2021.html#RS-0-&amp;amp;adk=1812271808&amp;amp;client=ca-pub-1677597403311019&amp;amp;fa=8&amp;amp;ifi=7&amp;amp;uci=a!7&quot; data-google-container-id=&quot;a!7&quot; tabindex=&quot;0&quot; title=&quot;Advertisement&quot; aria-label=&quot;Advertisement&quot; data-google-query-id=&quot;CPfhtPuZ1IoDFWKjZgIdcz8eeg&quot; data-load-complete=&quot;true&quot;&gt;&lt;/iframe&gt;
+  (Session info: MicrosoftEdge=131.0.2903.112)
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [06c204609f0079cda8c5cb0ac4fea1ee, clickElement {id=f.8C6C11FE607FAF8BA4483C62595AC2A5.d.C9324C8B0CDC4AABFE390266D07AE2F0.e.40}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 131.0.2903.112, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:51736}, msedge: {msedgedriverVersion: 131.0.2903.112 (16ab910a6e7..., userDataDir: C:\Users\apoor\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51736/devtoo..., se:cdpVersion: 131.0.2903.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (06c204609f0079cda8c5cb0ac4fea1ee)] -&gt; xpath: (//div[@class=&quot;productinfo text-center&quot;]/p[text()=&quot;Blue Top&quot;]//parent::div//parent::div//parent::div/a[text()=&quot;Add to cart&quot;])[1]]
+Session ID: 06c204609f0079cda8c5cb0ac4fea1ee
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at PageObjects.ProductPage.selectProduct(ProductPage.java:68)
+	at Tests.ProductTest.addProductAndVerify(ProductTest.java:37)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addProductAndVerify">
+                  </a> <!-- addProductAndVerify -->
+                  <span class="method-name">addProductAndVerify</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a data-product-id=&quot;1&quot; class=&quot;btn btn-default add-to-cart&quot;&gt;...&lt;/a&gt; is not clickable at point (494, 16). Other element would receive the click: &lt;iframe id=&quot;aswift_6&quot; name=&quot;aswift_6&quot; browsingtopics=&quot;true&quot; style=&quot;width: 100vw !important; height: 100vh !important; inset: 0px auto auto 0px !important; position: absolute !important; clear: none !important; display: inline !important; float: none !important; margin: 0px !important; max-height: none !important; max-width: none !important; opacity: 1 !important; overflow: visible !important; padding: 0px !important; vertical-align: baseline !important; visibility: visible !important; z-index: auto !important;&quot; sandbox=&quot;allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation&quot; width=&quot;&quot; height=&quot;&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; vspace=&quot;0&quot; hspace=&quot;0&quot; allowtransparency=&quot;true&quot; scrolling=&quot;no&quot; allow=&quot;attribution-reporting; run-ad-auction&quot; src=&quot;https://googleads.g.doubleclick.net/pagead/html/r20241212/r20190131/zrt_lookup_fy2021.html#RS-0-&amp;amp;adk=1812271808&amp;amp;client=ca-pub-1677597403311019&amp;amp;fa=8&amp;amp;ifi=7&amp;amp;uci=a!7&quot; data-google-container-id=&quot;a!7&quot; tabindex=&quot;0&quot; title=&quot;Advertisement&quot; aria-label=&quot;Advertisement&quot; data-google-query-id=&quot;CK-Emrya1IoDFaSrZgIdKhkpPQ&quot; data-load-complete=&quot;true&quot;&gt;&lt;/iframe&gt;
+  (Session info: MicrosoftEdge=131.0.2903.112)
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [63bbfe41995b994f2510c2562895f842, clickElement {id=f.598864C1E52345EB67E82A579D100BB0.d.7FE23658E0E291B3A7D5D960CECB97FF.e.25}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 131.0.2903.112, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:52285}, msedge: {msedgedriverVersion: 131.0.2903.112 (16ab910a6e7..., userDataDir: C:\Users\apoor\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52285/devtoo..., se:cdpVersion: 131.0.2903.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (63bbfe41995b994f2510c2562895f842)] -&gt; xpath: (//div[@class=&quot;productinfo text-center&quot;]/p[text()=&quot;Blue Top&quot;]//parent::div//parent::div//parent::div/a[text()=&quot;Add to cart&quot;])[1]]
+Session ID: 63bbfe41995b994f2510c2562895f842
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at PageObjects.ProductPage.selectProduct(ProductPage.java:68)
+	at Tests.ProductTest.addProductAndVerify(ProductTest.java:37)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkoutDetails">
+                  </a> <!-- checkoutDetails -->
+                  <span class="method-name">checkoutDetails</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[text()=&quot;Proceed To Checkout&quot;]&quot;}
+  (Session info: MicrosoftEdge=131.0.2903.112)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [63bbfe41995b994f2510c2562895f842, findElement {using=xpath, value=//a[text()=&quot;Proceed To Checkout&quot;]}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 131.0.2903.112, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:52285}, msedge: {msedgedriverVersion: 131.0.2903.112 (16ab910a6e7..., userDataDir: C:\Users\apoor\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52285/devtoo..., se:cdpVersion: 131.0.2903.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 63bbfe41995b994f2510c2562895f842
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at PageObjects.ProductPage.checkout(ProductPage.java:96)
+	at Tests.ProductTest.checkoutDetails(ProductTest.java:42)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="placeOrder">
+                  </a> <!-- placeOrder -->
+                  <span class="method-name">placeOrder</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[text()=&quot;Proceed To Checkout&quot;]&quot;}
+  (Session info: MicrosoftEdge=131.0.2903.112)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [63bbfe41995b994f2510c2562895f842, findElement {using=xpath, value=//a[text()=&quot;Proceed To Checkout&quot;]}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 131.0.2903.112, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:52285}, msedge: {msedgedriverVersion: 131.0.2903.112 (16ab910a6e7..., userDataDir: C:\Users\apoor\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52285/devtoo..., se:cdpVersion: 131.0.2903.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 63bbfe41995b994f2510c2562895f842
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at PageObjects.ProductPage.checkoutAfterLogin(ProductPage.java:89)
+	at Tests.ProductTest.placeOrder(ProductTest.java:55)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-failed -->
+          <div class="suite-All_Test_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Tests.RegisterTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createUserAccount">
+                  </a> <!-- createUserAccount -->
+                  <span class="method-name">createUserAccount</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//ul[@class=&quot;nav navbar-nav&quot;]/li/a[normalize-space()=&quot;Logout12&quot;]&quot;}
+  (Session info: MicrosoftEdge=131.0.2903.112)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [c7680033dba4c0a1a6cf0b96aa1feddc, findElement {using=xpath, value=//ul[@class=&quot;nav navbar-nav&quot;]/li/a[normalize-space()=&quot;Logout12&quot;]}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 131.0.2903.112, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:51085}, msedge: {msedgedriverVersion: 131.0.2903.112 (16ab910a6e7..., userDataDir: C:\Users\apoor\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51085/devtoo..., se:cdpVersion: 131.0.2903.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c7680033dba4c0a1a6cf0b96aa1feddc
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at PageObjects.DashboardPage.clickLogout(DashboardPage.java:20)
+	at Tests.RegisterTest.createUserAccount(RegisterTest.java:60)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createUserAccount">
+                  </a> <!-- createUserAccount -->
+                  <span class="method-name">createUserAccount</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//ul[@class=&quot;nav navbar-nav&quot;]/li/a[normalize-space()=&quot;Logout12&quot;]&quot;}
+  (Session info: MicrosoftEdge=131.0.2903.112)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [60cb428483e4f24a92a331998b234dae, findElement {using=xpath, value=//ul[@class=&quot;nav navbar-nav&quot;]/li/a[normalize-space()=&quot;Logout12&quot;]}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 131.0.2903.112, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:51951}, msedge: {msedgedriverVersion: 131.0.2903.112 (16ab910a6e7..., userDataDir: C:\Users\apoor\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51951/devtoo..., se:cdpVersion: 131.0.2903.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 60cb428483e4f24a92a331998b234dae
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at PageObjects.DashboardPage.clickLogout(DashboardPage.java:20)
+	at Tests.RegisterTest.createUserAccount(RegisterTest.java:60)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-failed -->
+          <div class="suite-All_Test_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Tests.PaymentTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="paymentDetails">
+                  </a> <!-- paymentDetails -->
+                  <span class="method-name">paymentDetails</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[text()=&quot;Proceed To Checkout&quot;]&quot;}
+  (Session info: MicrosoftEdge=131.0.2903.112)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [d10296989e04d81722340ad721acc1df, findElement {using=xpath, value=//a[text()=&quot;Proceed To Checkout&quot;]}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 131.0.2903.112, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:52345}, msedge: {msedgedriverVersion: 131.0.2903.112 (16ab910a6e7..., userDataDir: C:\Users\apoor\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52345/devtoo..., se:cdpVersion: 131.0.2903.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d10296989e04d81722340ad721acc1df
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at PageObjects.ProductPage.checkout1(ProductPage.java:101)
+	at Tests.PaymentTest.paymentDetails(PaymentTest.java:28)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-failed -->
+          <div class="suite-All_Test_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Tests.LogoutTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="login">
+                  </a> <!-- login -->
+                  <span class="method-name">login</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//ul[@class=&quot;nav navbar-nav&quot;]/li/a[normalize-space()=&quot;Logout12&quot;]&quot;}
+  (Session info: MicrosoftEdge=131.0.2903.112)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [f7fdac154236e513098412e9bcf9ea89, findElement {using=xpath, value=//ul[@class=&quot;nav navbar-nav&quot;]/li/a[normalize-space()=&quot;Logout12&quot;]}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 131.0.2903.112, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:51617}, msedge: {msedgedriverVersion: 131.0.2903.112 (16ab910a6e7..., userDataDir: C:\Users\apoor\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51617/devtoo..., se:cdpVersion: 131.0.2903.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f7fdac154236e513098412e9bcf9ea89
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at PageObjects.DashboardPage.clickLogout(DashboardPage.java:20)
+	at Tests.LogoutTest.login(LogoutTest.java:27)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-failed -->
+          <div class="suite-All_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Tests.RegisterExistingUser</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="register">
+                  </a> <!-- register -->
+                  <span class="method-name">register</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-passed -->
           <div class="suite-All_Test_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -199,57 +523,6 @@
                   <a name="searchProductBySearchBox">
                   </a> <!-- searchProductBySearchBox -->
                   <span class="method-name">searchProductBySearchBox</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-All_Test_Suite-class-passed -->
-          <div class="suite-All_Test_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">Tests.ProductTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="addProductAndVerify">
-                  </a> <!-- addProductAndVerify -->
-                  <span class="method-name">addProductAndVerify</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="addProductAndVerify">
-                  </a> <!-- addProductAndVerify -->
-                  <span class="method-name">addProductAndVerify</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="checkoutDetails">
-                  </a> <!-- checkoutDetails -->
-                  <span class="method-name">checkoutDetails</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="placeOrder">
-                  </a> <!-- placeOrder -->
-                  <span class="method-name">placeOrder</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-All_Test_Suite-class-passed -->
-          <div class="suite-All_Test_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">Tests.ContactusTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="contactDetails">
-                  </a> <!-- contactDetails -->
-                  <span class="method-name">contactDetails</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -272,44 +545,14 @@
           <div class="suite-All_Test_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">Tests.RegisterExistingUser</span>
+              <span class="class-name">Tests.ContactusTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="register">
-                  </a> <!-- register -->
-                  <span class="method-name">register</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-All_Test_Suite-class-passed -->
-          <div class="suite-All_Test_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">Tests.SubscriptionCartTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="subscriptionInsideCart">
-                  </a> <!-- subscriptionInsideCart -->
-                  <span class="method-name">subscriptionInsideCart</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-All_Test_Suite-class-passed -->
-          <div class="suite-All_Test_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">Tests.LogoutTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="login">
-                  </a> <!-- login -->
-                  <span class="method-name">login</span>
+                  <a name="contactDetails">
+                  </a> <!-- contactDetails -->
+                  <span class="method-name">contactDetails</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -332,21 +575,14 @@
           <div class="suite-All_Test_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">Tests.RegisterTest</span>
+              <span class="class-name">Tests.SubscriptionCartTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="createUserAccount">
-                  </a> <!-- createUserAccount -->
-                  <span class="method-name">createUserAccount</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="createUserAccount">
-                  </a> <!-- createUserAccount -->
-                  <span class="method-name">createUserAccount</span>
+                  <a name="subscriptionInsideCart">
+                  </a> <!-- subscriptionInsideCart -->
+                  <span class="method-name">subscriptionInsideCart</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -366,21 +602,6 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-All_Test_Suite-class-passed -->
-          <div class="suite-All_Test_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">Tests.PaymentTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="paymentDetails">
-                  </a> <!-- paymentDetails -->
-                  <span class="method-name">paymentDetails</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-All_Test_Suite-class-passed -->
         </div> <!-- panel All_Test_Suite -->
         <div panel-name="test-xml-All_Test_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -392,7 +613,7 @@
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;All Test Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;listeners&gt;
-    &lt;listener class-name=&quot;org.selenium.aj34.utils.listener&quot;/&gt;
+    &lt;listener class-name=&quot;utils.TestListener&quot;/&gt;
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;D:/Selenium Project/E2EFramework&quot;&gt;
     &lt;classes&gt;
@@ -468,70 +689,70 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(15);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'contactDetails')
-data.setCell(0, 2, 'Tests.ContactusTest')
-data.setCell(0, 3, 26608);
+data.setCell(0, 1, 'createUserAccount')
+data.setCell(0, 2, 'Tests.RegisterTest')
+data.setCell(0, 3, 89124);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'login')
-data.setCell(1, 2, 'Tests.LoginTestValidCred')
-data.setCell(1, 3, 21408);
+data.setCell(1, 1, 'paymentDetails')
+data.setCell(1, 2, 'Tests.PaymentTest')
+data.setCell(1, 3, 51707);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'addProductAndVerify')
-data.setCell(2, 2, 'Tests.ProductTest')
-data.setCell(2, 3, 13500);
+data.setCell(2, 1, 'createUserAccount')
+data.setCell(2, 2, 'Tests.RegisterTest')
+data.setCell(2, 3, 49126);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'createUserAccount')
-data.setCell(3, 2, 'Tests.RegisterTest')
-data.setCell(3, 3, 12965);
+data.setCell(3, 1, 'login')
+data.setCell(3, 2, 'Tests.LogoutTest')
+data.setCell(3, 3, 24042);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'addProductAndVerify')
+data.setCell(4, 1, 'placeOrder')
 data.setCell(4, 2, 'Tests.ProductTest')
-data.setCell(4, 3, 12687);
+data.setCell(4, 3, 21875);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'createUserAccount')
-data.setCell(5, 2, 'Tests.RegisterTest')
-data.setCell(5, 3, 10431);
+data.setCell(5, 1, 'checkoutDetails')
+data.setCell(5, 2, 'Tests.ProductTest')
+data.setCell(5, 3, 20040);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'paymentDetails')
-data.setCell(6, 2, 'Tests.PaymentTest')
-data.setCell(6, 3, 10386);
+data.setCell(6, 1, 'contactDetails')
+data.setCell(6, 2, 'Tests.ContactusTest')
+data.setCell(6, 3, 17551);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'placeOrder')
+data.setCell(7, 1, 'addProductAndVerify')
 data.setCell(7, 2, 'Tests.ProductTest')
-data.setCell(7, 3, 10225);
+data.setCell(7, 3, 16345);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'login')
-data.setCell(8, 2, 'Tests.LoginTestInvalidCred')
-data.setCell(8, 3, 5105);
+data.setCell(8, 1, 'subscriptionInsideCart')
+data.setCell(8, 2, 'Tests.SubscriptionCartTest')
+data.setCell(8, 3, 5853);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'subscriptionInsideCart')
-data.setCell(9, 2, 'Tests.SubscriptionCartTest')
-data.setCell(9, 3, 4723);
+data.setCell(9, 1, 'register')
+data.setCell(9, 2, 'Tests.RegisterExistingUser')
+data.setCell(9, 3, 4819);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'login')
-data.setCell(10, 2, 'Tests.LogoutTest')
-data.setCell(10, 3, 4658);
+data.setCell(10, 1, 'searchProductBySearchBox')
+data.setCell(10, 2, 'Tests.ProductTest_SearchBox')
+data.setCell(10, 3, 4213);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'checkoutDetails')
-data.setCell(11, 2, 'Tests.ProductTest')
-data.setCell(11, 3, 3732);
+data.setCell(11, 1, 'login')
+data.setCell(11, 2, 'Tests.LoginTestValidCred')
+data.setCell(11, 3, 3656);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'searchProductBySearchBox')
-data.setCell(12, 2, 'Tests.ProductTest_SearchBox')
-data.setCell(12, 3, 3641);
+data.setCell(12, 1, 'login')
+data.setCell(12, 2, 'Tests.LoginTestInvalidCred')
+data.setCell(12, 3, 3587);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'register')
-data.setCell(13, 2, 'Tests.RegisterExistingUser')
-data.setCell(13, 3, 3121);
+data.setCell(13, 1, 'subscription')
+data.setCell(13, 2, 'Tests.SubscriptionTest')
+data.setCell(13, 3, 2338);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'subscription')
-data.setCell(14, 2, 'Tests.SubscriptionTest')
-data.setCell(14, 3, 2257);
+data.setCell(14, 1, 'addProductAndVerify')
+data.setCell(14, 2, 'Tests.ProductTest')
+data.setCell(14, 3, 1408);
 window.suiteTableData['All_Test_Suite']= { tableData: data, tableDiv: 'times-div-All_Test_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <span class="suite-total-time">Total running time: 5 minutes</span>
               <div id="times-div-All_Test_Suite">
               </div> <!-- times-div-All_Test_Suite -->
             </div> <!-- times-div -->
@@ -552,11 +773,11 @@ return data;
             <div class="ignored-class-div">
               <span class="ignored-class-name">Tests.ProductTest</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">placeOrder</span>
+                <span class="ignored-method-name">product</span>
                 <br/>
                 <span class="ignored-method-name">checkoutDetails</span>
                 <br/>
-                <span class="ignored-method-name">product</span>
+                <span class="ignored-method-name">placeOrder</span>
                 <br/>
                 <span class="ignored-method-name">product</span>
                 <br/>
@@ -576,260 +797,276 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">createUserAccount</span>
-                <span class="method-start">7549 ms</span>
+                <span class="method-start">20888 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDownMethod([TestResult name=createUserAccount status=SUCCESS method=RegisterTest.createUserAccount()[pri:0, ins...)</span>
-                <span class="method-start">20696 ms</span>
+                <span class="method-name">tearDownMethod([TestResult name=createUserAccount status=FAILURE method=RegisterTest.createUserAccount()[pri:0, ins...)</span>
+                <span class="method-start">110782 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">20723 ms</span>
+                <span class="method-start">111506 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Tests.LoginTestValidCred</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">initializeBrowser</span>
-                <span class="method-start">22215 ms</span>
+                <span class="method-start">112902 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">login</span>
-                <span class="method-start">31340 ms</span>
+                <span class="method-start">119017 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDownMethod([TestResult name=login status=SUCCESS method=LoginTestValidCred.login()[pri:0, instance:Tests.LoginT...)</span>
-                <span class="method-start">52751 ms</span>
+                <span class="method-start">122673 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">52754 ms</span>
+                <span class="method-start">122681 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Tests.LoginTestInvalidCred</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">initializeBrowser</span>
-                <span class="method-start">54091 ms</span>
+                <span class="method-start">123946 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">login</span>
-                <span class="method-start">58219 ms</span>
+                <span class="method-start">146029 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDownMethod([TestResult name=login status=SUCCESS method=LoginTestInvalidCred.login()[pri:0, instance:Tests.Logi...)</span>
-                <span class="method-start">63324 ms</span>
+                <span class="method-start">149624 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">63337 ms</span>
+                <span class="method-start">149626 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Tests.LogoutTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">initializeBrowser</span>
-                <span class="method-start">64612 ms</span>
+                <span class="method-start">150902 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">login</span>
-                <span class="method-start">72229 ms</span>
+                <span class="method-start">156743 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDownMethod([TestResult name=login status=SUCCESS method=LogoutTest.login()[pri:0, instance:Tests.LogoutTest@77f...)</span>
-                <span class="method-start">76888 ms</span>
+                <span class="method-name">tearDownMethod([TestResult name=login status=FAILURE method=LogoutTest.login()[pri:0, instance:Tests.LogoutTest@422...)</span>
+                <span class="method-start">181513 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">76890 ms</span>
+                <span class="method-start">182119 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Tests.RegisterExistingUser</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">initializeBrowser</span>
-                <span class="method-start">78174 ms</span>
+                <span class="method-start">183436 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">register</span>
-                <span class="method-start">91158 ms</span>
+                <span class="method-start">188008 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDownMethod([TestResult name=register status=SUCCESS method=RegisterExistingUser.register()[pri:0, instance:Test...)</span>
-                <span class="method-start">94279 ms</span>
+                <span class="method-start">192842 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">94292 ms</span>
+                <span class="method-start">192845 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Tests.ContactusTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">initializeBrowser</span>
-                <span class="method-start">95586 ms</span>
+                <span class="method-start">193353 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">contactDetails</span>
-                <span class="method-start">101363 ms</span>
+                <span class="method-start">199967 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">127971 ms</span>
-              </div> <!-- configuration-class after -->
               <div class="configuration-method after">
                 <span class="method-name">tearDownMethod([TestResult name=contactDetails status=SUCCESS method=ContactusTest.contactDetails()[pri:0, instance...)</span>
-                <span class="method-start">127971 ms</span>
+                <span class="method-start">217518 ms</span>
               </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">217518 ms</span>
+              </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Tests.ProductTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">initializeBrowser</span>
-                <span class="method-start">129355 ms</span>
+                <span class="method-start">218889 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">addProductAndVerify</span>
-                <span class="method-start">135846 ms</span>
+                <span class="method-start">225730 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDownMethod([TestResult name=addProductAndVerify status=SUCCESS method=ProductTest.addProductAndVerify()[pri:0, ...)</span>
-                <span class="method-start">148533 ms</span>
+                <span class="method-name">tearDownMethod([TestResult name=addProductAndVerify status=FAILURE method=ProductTest.addProductAndVerify()[pri:0, ...)</span>
+                <span class="method-start">242821 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">148533 ms</span>
+                <span class="method-start">243756 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Tests.ProductTest_SearchBox</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">initializeBrowser</span>
-                <span class="method-start">149851 ms</span>
+                <span class="method-start">245472 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">searchProductBySearchBox</span>
-                <span class="method-start">159754 ms</span>
+                <span class="method-start">252093 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDownMethod([TestResult name=searchProductBySearchBox status=SUCCESS method=ProductTest_SearchBox.searchProductB...)</span>
-                <span class="method-start">163399 ms</span>
+                <span class="method-start">256307 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">163401 ms</span>
+                <span class="method-start">256311 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Tests.SubscriptionTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">initializeBrowser</span>
-                <span class="method-start">164726 ms</span>
+                <span class="method-start">257950 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">subscription</span>
-                <span class="method-start">172130 ms</span>
+                <span class="method-start">264158 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDownMethod([TestResult name=subscription status=SUCCESS method=SubscriptionTest.subscription()[pri:0, instance:...)</span>
-                <span class="method-start">174389 ms</span>
+                <span class="method-start">266496 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">174390 ms</span>
+                <span class="method-start">266496 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Tests.SubscriptionCartTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">initializeBrowser</span>
-                <span class="method-start">175669 ms</span>
+                <span class="method-start">269676 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">subscriptionInsideCart</span>
-                <span class="method-start">182898 ms</span>
+                <span class="method-start">290651 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDownMethod([TestResult name=subscriptionInsideCart status=SUCCESS method=SubscriptionCartTest.subscriptionInsid...)</span>
-                <span class="method-start">187623 ms</span>
+                <span class="method-start">296504 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">187627 ms</span>
+                <span class="method-start">296509 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Tests.RegisterTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">initializeBrowser</span>
-                <span class="method-start">189092 ms</span>
+                <span class="method-start">298135 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">createUserAccount</span>
-                <span class="method-start">195137 ms</span>
+                <span class="method-start">305570 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownMethod([TestResult name=createUserAccount status=FAILURE method=RegisterTest.createUserAccount()[pri:0, ins...)</span>
+                <span class="method-start">355151 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">205568 ms</span>
+                <span class="method-start">355596 ms</span>
               </div> <!-- configuration-class after -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDownMethod([TestResult name=createUserAccount status=SUCCESS method=RegisterTest.createUserAccount()[pri:0, ins...)</span>
-                <span class="method-start">205568 ms</span>
-              </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Tests.ProductTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">initializeBrowser</span>
-                <span class="method-start">206907 ms</span>
+                <span class="method-start">357201 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">addProductAndVerify</span>
-                <span class="method-start">213107 ms</span>
+                <span class="method-start">364161 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDownMethod([TestResult name=addProductAndVerify status=SUCCESS method=ProductTest.addProductAndVerify()[pri:0, ...)</span>
-                <span class="method-start">226607 ms</span>
+                <span class="method-name">tearDownMethod([TestResult name=addProductAndVerify status=FAILURE method=ProductTest.addProductAndVerify()[pri:0, ...)</span>
+                <span class="method-start">366267 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">checkoutDetails</span>
-                <span class="method-start">226613 ms</span>
+                <span class="method-start">367157 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDownMethod([TestResult name=checkoutDetails status=SUCCESS method=ProductTest.checkoutDetails()[pri:0, instance...)</span>
-                <span class="method-start">230352 ms</span>
+                <span class="method-name">tearDownMethod([TestResult name=checkoutDetails status=FAILURE method=ProductTest.checkoutDetails()[pri:0, instance...)</span>
+                <span class="method-start">387504 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">placeOrder</span>
-                <span class="method-start">230355 ms</span>
+                <span class="method-start">387823 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDownMethod([TestResult name=placeOrder status=SUCCESS method=ProductTest.placeOrder()[pri:0, instance:Tests.Pro...)</span>
-                <span class="method-start">240581 ms</span>
+                <span class="method-name">tearDownMethod([TestResult name=placeOrder status=FAILURE method=ProductTest.placeOrder()[pri:0, instance:Tests.Pro...)</span>
+                <span class="method-start">409920 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">240584 ms</span>
+                <span class="method-start">410138 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Tests.PaymentTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">initializeBrowser</span>
-                <span class="method-start">242027 ms</span>
+                <span class="method-start">411533 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">paymentDetails</span>
-                <span class="method-start">248594 ms</span>
+                <span class="method-start">427138 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDownMethod([TestResult name=paymentDetails status=SUCCESS method=PaymentTest.paymentDetails()[pri:0, instance:T...)</span>
-                <span class="method-start">258980 ms</span>
+                <span class="method-name">tearDownMethod([TestResult name=paymentDetails status=FAILURE method=PaymentTest.paymentDetails()[pri:0, instance:T...)</span>
+                <span class="method-start">479083 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">258980 ms</span>
+                <span class="method-start">479318 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
