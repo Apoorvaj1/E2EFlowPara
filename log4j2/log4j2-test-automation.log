@@ -15,3 +15,21 @@
 [INFO ] 2025-01-02 08:17:11.506 [main] SubscriptionCartTest - --------------Started-------------------
 [INFO ] 2025-01-02 08:17:14.966 [main] SubscriptionCartTest - --------------FINISHED-------------------
 [INFO ] 2025-01-02 08:17:22.989 [main] RegisterTest - --------------Started-------------------
+[INFO ] 2025-01-02 09:34:58.165 [main] Utils - [TestNG] Running:
+  D:\Selenium Project\E2EFramwork\testng.xml
+
+[INFO ] 2025-01-02 09:35:07.205 [main] Utils - [TestNG] Running:
+  C:\Users\apoor\AppData\Local\JetBrains\IdeaIC2023.2\temp-testng-customsuite.xml
+
+[INFO ] 2025-01-02 09:55:11.445 [main] Utils - [TestNG] Running:
+  C:\Users\apoor\AppData\Local\JetBrains\IdeaIC2023.2\temp-testng-customsuite.xml
+
+[INFO ] 2025-01-02 12:08:00.893 [main] Utils - [TestNG] Running:
+  C:\Users\apoor\AppData\Local\JetBrains\IdeaIC2023.2\temp-testng-customsuite.xml
+
+[INFO ] 2025-01-02 12:08:57.629 [main] Utils - [TestNG] Running:
+  C:\Users\apoor\AppData\Local\JetBrains\IdeaIC2023.2\temp-testng-customsuite.xml
+
+[INFO ] 2025-01-02 12:16:51.767 [main] Utils - [TestNG] Running:
+  C:\Users\apoor\AppData\Local\JetBrains\IdeaIC2023.2\temp-testng-customsuite.xml
+

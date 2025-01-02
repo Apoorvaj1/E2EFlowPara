@@ -5,17 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9df1aba4-6558-4f14-bf82-96de90f87021" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/LoginTestExcel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/LoginTestJSONArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/TestData/jsonArrayData.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log4j2/log4j2-test-automation.log" beforeDir="false" afterPath="$PROJECT_DIR$/log4j2/log4j2-test-automation.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/DashboardPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/DashboardPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/ProductPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/ProductPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/selenium/aj34/utils/dataProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/dataProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/selenium/aj34/utils/excelReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/excelReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/selenium/aj34/utils/listener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/TestListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/selenium/aj34/orangeHRM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/selenium/aj34/orangeHRM.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utils/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/selenium/aj34/utils/jsonReaderInArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/selenium/aj34/utils/jsonReaderInArray.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,14 +54,14 @@
       <recent name="D:\Selenium Project\E2EFramwork" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.selenium.aj34.utils" />
       <recent name="utils" />
       <recent name="Tests" />
-      <recent name="org.selenium.aj34.utils" />
       <recent name="Data" />
       <recent name="org.selenium.aj34" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.D:/Selenium Project/E2EFramwork/testng.xml">
+  <component name="RunManager">
     <configuration name="D:/Selenium Project/E2EFramwork/testng.xml" type="TestNG" nameIsGenerated="true">
       <module name="E2EFramework" />
       <shortenClasspath name="NONE" />
