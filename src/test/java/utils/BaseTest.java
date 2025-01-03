@@ -38,7 +38,7 @@ public class BaseTest {
         return driver;
     }
 
-    @BeforeClass
+    @BeforeClass(alwaysRun = true)
     public void initializeBrowser(){
         driver = init(org.selenium.aj34.utils.configReader.readKey("browser"));
         org.selenium.aj34.utils.browserFactory.setDriver(driver);
@@ -46,7 +46,7 @@ public class BaseTest {
         driver.get(org.selenium.aj34.utils.configReader.readKey("homepage(URL)"));
     }
 
-    @AfterClass
+    @AfterClass(alwaysRun = true)
     public void tearDown(){
         if(driver!=null){
             driver.quit();

@@ -19,7 +19,7 @@ public class LoginTestInvalidCred extends BaseTest {
     Faker faker = new Faker();
     private static final Logger logger = LogManager.getLogger(LoginTestInvalidCred.class);
 
-    @Test
+    @Test(groups = {"Regression"})
     public void login(){
         logger.info("--------------Started-------------------");
         homepage = new HomePage(driver);

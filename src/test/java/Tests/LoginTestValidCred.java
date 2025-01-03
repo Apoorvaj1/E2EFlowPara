@@ -14,7 +14,7 @@ public class LoginTestValidCred extends BaseTest {
     HomePage homepage;
     private static final Logger logger = LogManager.getLogger(LoginTestValidCred.class);
 
-    @Test
+    @Test(groups = {"Regression"})
     public void login(){
         logger.info("--------------Started-------------------");
         homepage = new HomePage(driver);

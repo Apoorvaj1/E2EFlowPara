@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="utils.TestListener"/>
+    </listeners>
+    <test name="Demo">
+        <classes>
+            <class name="Tests.RegisterTest"/>
+            <class name="Tests.LoginTestValidCred"/>
+            <class name="Tests.LoginTestInvalidCred"/>
+            <class name="Tests.LogoutTest"/>
+            <class name="Tests.RegisterExistingUser"/>
+            <class name="Tests.ContactusTest"/>
+            <class name="Tests.ProductTest"/>
+            <class name="Tests.ProductTest_SearchBox"/>
+            <class name="Tests.SubscriptionTest"/>
+            <class name="Tests.SubscriptionCartTest"/>
+            <class name="Tests.ProductTest">
+                <methods>
+                    <include name="addProductAndVerify"/>
+                </methods>
+            </class>
+
+        </classes>
+    </test>
+
+    <test name="Demo1">
+        <classes>
+            <class name="Tests.RegisterTest"/>
+            <class name="Tests.ProductTest">
+                <methods>
+                    <include name="addProductAndVerify"/>
+                    <include name="checkoutDetails"/>
+                    <include name="placeOrder"/>
+                </methods>
+            </class>
+            <class name="Tests.PaymentTest"/>
+
+        </classes>
+    </test>
+</suite>

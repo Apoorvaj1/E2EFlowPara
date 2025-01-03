@@ -23,7 +23,7 @@ public class RegisterTest extends BaseTest {
         public static String emailAddress = null;
         private static final Logger logger = LogManager.getLogger(RegisterTest.class);
 
-        @Test
+        @Test(groups = {"Regression"})
         public void createUserAccount(){
             logger.info("--------------Started-------------------");
            homepage = new HomePage(driver);

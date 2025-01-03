@@ -19,6 +19,62 @@
 
   <profiles>
     <profile>
+      <id>UI_testing</id>
+
+      <build>
+        <!-- To define the plugin version in your parent POM -->
+        <pluginManagement>
+          <plugins>
+            <plugin>
+              <groupId>org.apache.maven.plugins</groupId>
+              <artifactId>maven-compiler-plugin</artifactId>
+              <version>3.13.0</version>
+            </plugin>
+
+            <plugin>
+              <groupId>org.apache.maven.plugins</groupId>
+              <artifactId>maven-surefire-plugin</artifactId>
+              <version>3.1.2</version>
+              <configuration>
+                <suiteXmlFiles>
+                  <suiteXmlFile>testng-UI.xml</suiteXmlFile>
+                </suiteXmlFiles>
+              </configuration>
+            </plugin>
+          </plugins>
+        </pluginManagement>
+      </build>
+    </profile>
+
+    <profile>
+      <id>API testing</id>
+
+      <build>
+        <!-- To define the plugin version in your parent POM -->
+        <pluginManagement>
+          <plugins>
+            <plugin>
+              <groupId>org.apache.maven.plugins</groupId>
+              <artifactId>maven-compiler-plugin</artifactId>
+              <version>3.13.0</version>
+            </plugin>
+
+            <plugin>
+              <groupId>org.apache.maven.plugins</groupId>
+              <artifactId>maven-surefire-plugin</artifactId>
+              <version>3.1.2</version>
+              <configuration>
+                <suiteXmlFiles>
+                  <suiteXmlFile>testng-API.xml</suiteXmlFile>
+                </suiteXmlFiles>
+              </configuration>
+            </plugin>
+          </plugins>
+        </pluginManagement>
+      </build>
+    </profile>
+
+    <profile>
       <id>Regression</id>
 
       <build>
@@ -37,35 +93,7 @@
               <version>3.1.2</version>
               <configuration>
                 <suiteXmlFiles>
-                  <suiteXmlFile>testng.xml</suiteXmlFile>
-                </suiteXmlFiles>
-              </configuration>
-            </plugin>
-          </plugins>
-        </pluginManagement>
-      </build>
-    </profile>
-
-    <profile>
-      <id>Smoke</id>
-
-      <build>
-        <!-- To define the plugin version in your parent POM -->
-        <pluginManagement>
-          <plugins>
-            <plugin>
-              <groupId>org.apache.maven.plugins</groupId>
-              <artifactId>maven-compiler-plugin</artifactId>
-              <version>3.13.0</version>
-            </plugin>
-
-            <plugin>
-              <groupId>org.apache.maven.plugins</groupId>
-              <artifactId>maven-surefire-plugin</artifactId>
-              <version>3.1.2</version>
-              <configuration>
-                <suiteXmlFiles>
-                  <suiteXmlFile>testng1.xml</suiteXmlFile>
+                  <suiteXmlFile>Regression.xml</suiteXmlFile>
                 </suiteXmlFiles>
               </configuration>
             </plugin>
@@ -78,50 +106,50 @@
 
   <build>
     <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-surefire-plugin</artifactId>
-        <version>3.1.2</version>
-        <configuration>
-          <suiteXmlFiles>
-            <suiteXmlFile>testng.xml</suiteXmlFile>
-          </suiteXmlFiles>
-          <testFailureIgnore>false</testFailureIgnore>
-          <argLine>
-            -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
-          </argLine>
-          <systemPropertyVariables>
-            <allure.results.directory>target/allure-results</allure.results.directory>
-          </systemPropertyVariables>
-        </configuration>
-        <dependencies>
-          <dependency>
-            <groupId>org.aspectj</groupId>
-            <artifactId>aspectjweaver</artifactId>
-            <version>${aspectj.version}</version>
-          </dependency>
-        </dependencies>
-      </plugin>
+<!--      <plugin>-->
+<!--        <groupId>org.apache.maven.plugins</groupId>-->
+<!--        <artifactId>maven-surefire-plugin</artifactId>-->
+<!--        <version>3.1.2</version>-->
+<!--        <configuration>-->
+<!--          <suiteXmlFiles>-->
+<!--            <suiteXmlFile>testng.xml</suiteXmlFile>-->
+<!--          </suiteXmlFiles>-->
+<!--          <testFailureIgnore>false</testFailureIgnore>-->
+<!--          <argLine>-->
+<!--            -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"-->
+<!--          </argLine>-->
+<!--          <systemPropertyVariables>-->
+<!--            <allure.results.directory>target/allure-results</allure.results.directory>-->
+<!--          </systemPropertyVariables>-->
+<!--        </configuration>-->
+<!--        <dependencies>-->
+<!--          <dependency>-->
+<!--            <groupId>org.aspectj</groupId>-->
+<!--            <artifactId>aspectjweaver</artifactId>-->
+<!--            <version>${aspectj.version}</version>-->
+<!--          </dependency>-->
+<!--        </dependencies>-->
+<!--      </plugin>-->
 
-      <!-- Added Surefire Plugin configuration to execute tests -->
-      <plugin>
-        <groupId>io.qameta.allure</groupId>
-        <artifactId>allure-maven</artifactId>
-        <version>2.15.1</version>
-        <executions>
-          <execution>
-            <phase>verify</phase> <!-- Generates report after tests complete -->
-            <goals>
-              <goal>serve</goal>
-            </goals>
-          </execution>
-        </executions>
-        <configuration>
-          <reportVersion>2.19.0</reportVersion>
-          <resultsDirectory>allure-results</resultsDirectory>
-          <reportDirectory>site/allure-report</reportDirectory>
-        </configuration>
-      </plugin>
+<!--      &lt;!&ndash; Added Surefire Plugin configuration to execute tests &ndash;&gt;-->
+<!--      <plugin>-->
+<!--        <groupId>io.qameta.allure</groupId>-->
+<!--        <artifactId>allure-maven</artifactId>-->
+<!--        <version>2.15.1</version>-->
+<!--        <executions>-->
+<!--          <execution>-->
+<!--            <phase>verify</phase> &lt;!&ndash; Generates report after tests complete &ndash;&gt;-->
+<!--            <goals>-->
+<!--              <goal>serve</goal>-->
+<!--            </goals>-->
+<!--          </execution>-->
+<!--        </executions>-->
+<!--        <configuration>-->
+<!--          <reportVersion>2.19.0</reportVersion>-->
+<!--          <resultsDirectory>allure-results</resultsDirectory>-->
+<!--          <reportDirectory>site/allure-report</reportDirectory>-->
+<!--        </configuration>-->
+<!--      </plugin>-->
 
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
@@ -132,9 +160,6 @@
           <argLine>
             -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
           </argLine>
-          <suiteXmlFiles>
-            <suiteXmlFile>testng.xml</suiteXmlFile>
-          </suiteXmlFiles>
         </configuration>
         <dependencies>
           <dependency>

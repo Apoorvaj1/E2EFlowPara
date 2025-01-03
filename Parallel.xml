@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" parallel="true">
+    <listeners>
+        <listener class-name="utils.TestListener"/>
+    </listeners>
+    <suite-files>
+        <suite-file path="Regression.xml"/>
+        <suite-file path="testng-UI.xml"/>
+    </suite-files>
+</suite>
