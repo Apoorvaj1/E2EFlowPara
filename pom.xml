@@ -47,7 +47,7 @@
     </profile>
 
     <profile>
-      <id>API testing</id>
+      <id>API_testing</id>
 
       <build>
         <!-- To define the plugin version in your parent POM -->
