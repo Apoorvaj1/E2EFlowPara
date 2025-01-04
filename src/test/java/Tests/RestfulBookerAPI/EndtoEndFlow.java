@@ -25,11 +25,11 @@ public class EndtoEndFlow {
     private static RequestSpecification specification;
     private static ResponseSpecification res_specification;
     private String token;
-    private int id;
-    private List<Integer> bookingIds = new ArrayList<>();
+    public int id;
+    public List<Integer> bookingIds = new ArrayList<>();
 
     @BeforeClass
-    public static void createRequestAndResponseSpecs() {
+    public void createRequestAndResponseSpecs() {
         specification = new RequestSpecBuilder()
                 .setBaseUri("https://restful-booker.herokuapp.com")
                 .setContentType(ContentType.JSON)

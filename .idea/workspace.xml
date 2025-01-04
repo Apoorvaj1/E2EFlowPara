@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9df1aba4-6558-4f14-bf82-96de90f87021" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/testng-API.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng-API.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/RestfulBookerAPI/EndtoEndFlow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/RestfulBookerAPI/EndtoEndFlow.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
