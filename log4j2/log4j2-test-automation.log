@@ -178,3 +178,7 @@
 [INFO ] 2025-01-04 13:23:44.199 [main] Utils - [TestNG] Running:
   C:\Users\apoor\AppData\Local\JetBrains\IdeaIC2023.2\temp-testng-customsuite.xml
 
+[WARN ] 2025-01-04 14:06:18.404 [main] Configuration - Detected a static method [Tests.RestfulBookerAPI.EndtoEndFlow.createRequestAndResponseSpecs()]. Static configuration methods can cause unexpected behavior.
+[INFO ] 2025-01-04 14:06:18.440 [main] Utils - [TestNG] Running:
+  D:\Selenium Project\E2EFramwork\testng-API.xml
+

@@ -4,39 +4,9 @@
     <listeners>
         <listener class-name="utils.TestListener"/>
     </listeners>
-    <test name="Demo">
+    <test name="API test">
         <classes>
-            <class name="Tests.RegisterTest"/>
-            <class name="Tests.LoginTestValidCred"/>
-            <class name="Tests.LoginTestInvalidCred"/>
-            <class name="Tests.LogoutTest"/>
-            <class name="Tests.RegisterExistingUser"/>
-            <class name="Tests.ContactusTest"/>
-            <class name="Tests.ProductTest"/>
-            <class name="Tests.ProductTest_SearchBox"/>
-            <class name="Tests.SubscriptionTest"/>
-            <class name="Tests.SubscriptionCartTest"/>
-            <class name="Tests.ProductTest">
-                <methods>
-                    <include name="addProductAndVerify"/>
-                </methods>
-            </class>
-
-        </classes>
-    </test>
-
-    <test name="Demo1">
-        <classes>
-            <class name="Tests.RegisterTest"/>
-            <class name="Tests.ProductTest">
-                <methods>
-                    <include name="addProductAndVerify"/>
-                    <include name="checkoutDetails"/>
-                    <include name="placeOrder"/>
-                </methods>
-            </class>
-            <class name="Tests.PaymentTest"/>
-
+            <class name="Tests.RestfulBookerAPI.EndtoEndFlow"/>
         </classes>
     </test>
 </suite>
