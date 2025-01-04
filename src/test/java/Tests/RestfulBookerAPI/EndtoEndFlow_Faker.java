@@ -20,7 +20,7 @@ import java.util.List;
 
 import static io.restassured.RestAssured.given;
 
-public class EndtoEndFlow {
+public class EndtoEndFlow_Faker {
 
     private static RequestSpecification specification;
     private static ResponseSpecification res_specification;
@@ -101,9 +101,9 @@ public class EndtoEndFlow {
         response.then().body("[0].bookingid",Matchers.greaterThan(10));
     }
 
-    @Test(dependsOnMethods = "createToken",dataProvider = "demoData",dataProviderClass = dataProviderPayload.class)
-    public void createBooking(String first,String last,int totalP){
-        String payload = utils.Payload.getPayload(first,last,totalP);
+    @Test(dependsOnMethods = "createToken",dataProvider = "demoData1",dataProviderClass = dataProviderPayload.class)
+    public void createBooking(String first,String last,int totalP,boolean bool){
+        String payload = utils.Payload.payloadPUT(first,last,totalP,bool);
         Response response = given().spec(specification).basePath("/booking").cookie("token",token).body(payload).when().post();
         response.getBody().prettyPrint();
         int statusCode1 = response.getStatusCode();
@@ -119,7 +119,7 @@ public class EndtoEndFlow {
     @Test(dependsOnMethods = "createBooking")
     public void getBooking(){
         for(Integer id:bookingIds){
-            Response response = given().spec(specification).basePath("/booking/{ID}").pathParams("ID",id).cookie("token",token).when().get();
+            Response response = given().spec(specification).basePath("/booking/{ID}").pathParams("ID",id).when().get();
             response.getBody().prettyPrint();
             JsonPath jsonPath = new JsonPath(response.asString());
             price = jsonPath.getInt("totalprice");
@@ -134,23 +134,6 @@ public class EndtoEndFlow {
             sum = sum+i;
         }
         System.out.println("Sum is "+sum);
-    }
-
-    @Test(dependsOnMethods = "getBooking",dataProvider = "demoData1",dataProviderClass = dataProviderPayload.class)
-    public void fullUpdateBooking(String first,String last, int totalP,boolean bool){
-        for(Integer id:bookingIds){
-            Response response = given().spec(specification).basePath("/booking/{ID}").pathParams("ID",id).cookie("token",token).body(utils.Payload.payloadPUT(first,last,totalP,bool)).when().put();
-            response.getBody().prettyPrint();
-        }
-    }
-
-    @Test(dependsOnMethods = "fullUpdateBooking")
-    public void deleteBooking(){
-        for(Integer id:bookingIds){
-            Response response = given().spec(specification).basePath("/booking/{ID}").pathParams("ID",id).cookie("token",token).when().delete();
-            int status = response.getStatusCode();
-            System.out.println(status);
-        }
     }
 
 

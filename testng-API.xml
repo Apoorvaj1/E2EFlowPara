@@ -6,4 +6,10 @@
             <class name="Tests.RestfulBookerAPI.EndtoEndFlow"/>
         </classes>
     </test>
+
+    <test name="API test1">
+    <classes>
+        <class name="Tests.RestfulBookerAPI.EndtoEndFlow_Faker"/>
+    </classes>
+    </test>
 </suite>

@@ -5,7 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9df1aba4-6558-4f14-bf82-96de90f87021" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/RestfulBookerAPI/EndtoEndFlow_Faker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log4j2/log4j2-test-automation.log" beforeDir="false" afterPath="$PROJECT_DIR$/log4j2/log4j2-test-automation.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/selenium/aj34/utils/dataProviderPayload.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/selenium/aj34/utils/dataProviderPayload.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Tests/RestfulBookerAPI/EndtoEndFlow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/RestfulBookerAPI/EndtoEndFlow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utils/Payload.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/Payload.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng-API.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng-API.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
