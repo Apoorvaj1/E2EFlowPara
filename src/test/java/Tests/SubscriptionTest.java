@@ -13,7 +13,7 @@ public class SubscriptionTest extends BaseTest {
     @Test
     public void subscription() throws InterruptedException {
         logger.info("--------------Started-------------------");
-        homePage = new HomePage(driver);
+        homePage = new HomePage(org.selenium.aj34.utils.browserFactory.getDriver());
         homePage.enterSubscriptionEmail(RegisterTest.emailAddress);
         logger.info("--------------FINISHED-------------------");
     }

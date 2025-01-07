@@ -64,25 +64,24 @@ public class ProductPage extends BaseClass {
     }
 
     public void selectProduct() throws InterruptedException {
-        scrollToWebElement(driver.findElement(product1));
-        driver.findElement(product1).click();
-        Thread.sleep(2000);
-        verifyPresenceOfElement(successMessage);
-        driver.findElement(continueShopping).click();
-        Thread.sleep(2000);
-        scrollToWebElement(driver.findElement(addToCartLink));
-        driver.findElement(addToCartLink).click();
-        Thread.sleep(2000);
-        verifyPresenceOfElement(successMessage);
-        driver.findElement(continueShopping).click();
-        Thread.sleep(2000);
-        scrollToWebElement(driver.findElement(By.xpath(" (//ul[@class=\"nav navbar-nav\"]/li/a[normalize-space()=\"Cart\"])")));
-        driver.findElement(By.xpath(" (//ul[@class=\"nav navbar-nav\"]/li/a[normalize-space()=\"Cart\"])")).click();
-        List<WebElement> list = driver.findElements(totalProductInCart);
-        for(WebElement ele:list){
-            System.out.println(ele.getText());
-        }
-
+            scrollToWebElement(driver.findElement(product1));
+            driver.findElement(product1).click();
+            Thread.sleep(2000);
+            verifyPresenceOfElement(successMessage);
+            driver.findElement(continueShopping).click();
+            Thread.sleep(2000);
+            scrollToWebElement(driver.findElement(addToCartLink));
+            driver.findElement(addToCartLink).click();
+            Thread.sleep(2000);
+            verifyPresenceOfElement(successMessage);
+            driver.findElement(continueShopping).click();
+            Thread.sleep(2000);
+            scrollToWebElement(driver.findElement(By.xpath(" (//ul[@class=\"nav navbar-nav\"]/li/a[normalize-space()=\"Cart\"])")));
+            driver.findElement(By.xpath(" (//ul[@class=\"nav navbar-nav\"]/li/a[normalize-space()=\"Cart\"])")).click();
+            List<WebElement> list = driver.findElements(totalProductInCart);
+            for(WebElement ele:list){
+                System.out.println(ele.getText());
+            }
     }
 
     public PaymentPage checkoutAfterLogin(){

@@ -26,9 +26,9 @@ public class RegisterTest extends BaseTest {
         @Test(groups = {"Regression"})
         public void createUserAccount(){
             logger.info("--------------Started-------------------");
-           homepage = new HomePage(driver);
+           homepage = new HomePage(org.selenium.aj34.utils.browserFactory.getDriver());
            homepage.click_SignUpLogin();
-           page = new RegisterPage(driver);
+           page = new RegisterPage(org.selenium.aj34.utils.browserFactory.getDriver());
            firstName = faker.name().firstName();
            System.out.println(firstName);
            page.enterSignUpName(firstName);
@@ -55,7 +55,7 @@ public class RegisterTest extends BaseTest {
            Assert.assertTrue(bool);
            page.allTextExtract();
            page.clickContinueButton();
-           dashboardPage = new DashboardPage(driver);
+           dashboardPage = new DashboardPage(org.selenium.aj34.utils.browserFactory.getDriver());
            Assert.assertTrue(dashboardPage.deleteAccountOption());
            loginPage = dashboardPage.clickLogout();
             logger.info("--------------FINISHED-------------------");

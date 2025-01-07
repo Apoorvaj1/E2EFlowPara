@@ -34,9 +34,9 @@ public class LoginTestJSONArray extends BaseTest {
 
     @Test(dataProvider = "loginData")
     public void readDataFromJSONArray(Map<String, String> loginData) {
-        homepage = new HomePage(driver);
+        homepage = new HomePage(org.selenium.aj34.utils.browserFactory.getDriver());
         homepage.click_SignUpLogin();
-        loginPage = new LoginPage(driver);
+        loginPage = new LoginPage(org.selenium.aj34.utils.browserFactory.getDriver());
         loginPage.enterLoginEmail(loginData.get("email"));
         loginPage.enterLoginPassword(loginData.get("password"));
         loginPage.clickLoginButton();

@@ -17,13 +17,13 @@ public class LogoutTest extends BaseTest {
     @Test
     public void login(){
         logger.info("--------------Started-------------------");
-        homePage = new HomePage(driver);
+        homePage = new HomePage(org.selenium.aj34.utils.browserFactory.getDriver());
         homePage.click_SignUpLogin();
-        loginPage = new LoginPage(driver);
+        loginPage = new LoginPage(org.selenium.aj34.utils.browserFactory.getDriver());
         loginPage.enterLoginEmail(RegisterTest.emailAddress);
         loginPage.enterLoginPassword(org.selenium.aj34.utils.configReader.readKey("password"));
         loginPage.clickLoginButton();
-        dashboardPage = new DashboardPage(driver);
+        dashboardPage = new DashboardPage(org.selenium.aj34.utils.browserFactory.getDriver());
         loginPage = dashboardPage.clickLogout();
         System.out.println("Able to navigate back to login page");
         logger.info("--------------FINISHED-------------------");

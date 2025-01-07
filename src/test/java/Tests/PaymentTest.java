@@ -17,17 +17,17 @@ public class PaymentTest extends BaseTest {
     Faker faker = new Faker();
     @Test
     public void paymentDetails(){
-        homePage = new HomePage(driver);
+        homePage = new HomePage(org.selenium.aj34.utils.browserFactory.getDriver());
         homePage.click_SignUpLogin();
-        loginPage = new LoginPage(driver);
+        loginPage = new LoginPage(org.selenium.aj34.utils.browserFactory.getDriver());
         loginPage.enterLoginEmail(RegisterTest.emailAddress);
         loginPage.enterLoginPassword(org.selenium.aj34.utils.configReader.readKey("password"));
         loginPage.clickLoginButton();
         homePage.clickCart();
-        productPage = new ProductPage(driver);
+        productPage = new ProductPage(org.selenium.aj34.utils.browserFactory.getDriver());
         productPage.checkout1();
         productPage.scrollToPlaceOrder();
-        paymentPage = new PaymentPage(driver);
+        paymentPage = new PaymentPage(org.selenium.aj34.utils.browserFactory.getDriver());
         paymentPage.enterCardName(faker.name().fullName());
         paymentPage.enterCardNumber(faker.finance().creditCard());
         paymentPage.enterCVC(faker.number().digits(3));

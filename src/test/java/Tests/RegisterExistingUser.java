@@ -18,13 +18,13 @@ public class RegisterExistingUser extends BaseTest {
     @Test
     public void register(){
         logger.info("--------------Started-------------------");
-        homePage = new HomePage(driver);
+        homePage = new HomePage(org.selenium.aj34.utils.browserFactory.getDriver());
         homePage.click_SignUpLogin();
-        registerPage = new RegisterPage(driver);
+        registerPage = new RegisterPage(org.selenium.aj34.utils.browserFactory.getDriver());
         registerPage.enterSignUpName(RegisterTest.firstName);
         registerPage.enterSignUpEmail(RegisterTest.emailAddress);
         registerPage.clickSignUpButton();
-        Assert.assertTrue(driver.findElement(By.xpath("//p[text()=\"Email Address already exist!\"]")).isDisplayed());
+        Assert.assertTrue(org.selenium.aj34.utils.browserFactory.getDriver().findElement(By.xpath("//p[text()=\"Email Address already exist!\"]")).isDisplayed());
         logger.info("--------------FINISHED-------------------");
     }
 }

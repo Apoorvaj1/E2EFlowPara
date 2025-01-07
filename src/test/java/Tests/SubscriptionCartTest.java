@@ -13,7 +13,7 @@ public class SubscriptionCartTest extends BaseTest {
     @Test
     public void subscriptionInsideCart() throws InterruptedException {
         logger.info("--------------Started-------------------");
-        homePage = new HomePage(driver);
+        homePage = new HomePage(org.selenium.aj34.utils.browserFactory.getDriver());
         homePage.clickCart();
         homePage.enterSubscriptionEmail(RegisterTest.emailAddress);
         logger.info("--------------FINISHED-------------------");

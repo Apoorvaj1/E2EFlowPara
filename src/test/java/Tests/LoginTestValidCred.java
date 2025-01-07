@@ -17,9 +17,9 @@ public class LoginTestValidCred extends BaseTest {
     @Test(groups = {"Regression"})
     public void login(){
         logger.info("--------------Started-------------------");
-        homepage = new HomePage(driver);
+        homepage = new HomePage(org.selenium.aj34.utils.browserFactory.getDriver());
         homepage.click_SignUpLogin();
-        loginPage = new LoginPage(driver);
+        loginPage = new LoginPage(org.selenium.aj34.utils.browserFactory.getDriver());
         loginPage.enterLoginEmail(RegisterTest.emailAddress);
         loginPage.enterLoginPassword(org.selenium.aj34.utils.configReader.readKey("password"));
         loginPage.clickLoginButton();

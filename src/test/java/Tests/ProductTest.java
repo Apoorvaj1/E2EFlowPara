@@ -18,9 +18,9 @@ public class ProductTest extends BaseTest {
     @Test
     public void product() throws InterruptedException {
         logger.info("--------------Started-------------------");
-        homePage = new HomePage(driver);
+        homePage = new HomePage(org.selenium.aj34.utils.browserFactory.getDriver());
         homePage.click_product();
-        productPage = new ProductPage(driver);
+        productPage = new ProductPage(org.selenium.aj34.utils.browserFactory.getDriver());
         productPage.allProduct();
         productPage.scrollToViewProduct();
         productPage.click_ViewProduct();
@@ -31,16 +31,16 @@ public class ProductTest extends BaseTest {
 
     @Test
     public void addProductAndVerify() throws InterruptedException {
-        homePage = new HomePage(driver);
+        homePage = new HomePage(org.selenium.aj34.utils.browserFactory.getDriver());
         homePage.click_product();
-        productPage = new ProductPage(driver);
+        productPage = new ProductPage(org.selenium.aj34.utils.browserFactory.getDriver());
         productPage.selectProduct();
     }
 
     @Test
     public void checkoutDetails(){
         productPage.checkout();
-        loginPage = new LoginPage(driver);
+        loginPage = new LoginPage(org.selenium.aj34.utils.browserFactory.getDriver());
         loginPage.enterLoginEmail(RegisterTest.emailAddress);
         loginPage.enterLoginPassword(org.selenium.aj34.utils.configReader.readKey("password"));
         loginPage.clickLoginButton();
@@ -49,9 +49,9 @@ public class ProductTest extends BaseTest {
 
     @Test
     public void placeOrder(){
-        homePage = new HomePage(driver);
+        homePage = new HomePage(org.selenium.aj34.utils.browserFactory.getDriver());
         homePage.clickCart();
-        productPage = new ProductPage(driver);
+        productPage = new ProductPage(org.selenium.aj34.utils.browserFactory.getDriver());
         productPage.checkoutAfterLogin();
     }
 }

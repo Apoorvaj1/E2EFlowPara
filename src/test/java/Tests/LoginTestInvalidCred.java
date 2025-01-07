@@ -22,13 +22,13 @@ public class LoginTestInvalidCred extends BaseTest {
     @Test(groups = {"Regression"})
     public void login(){
         logger.info("--------------Started-------------------");
-        homepage = new HomePage(driver);
+        homepage = new HomePage(org.selenium.aj34.utils.browserFactory.getDriver());
         homepage.click_SignUpLogin();
-        loginPage = new LoginPage(driver);
+        loginPage = new LoginPage(org.selenium.aj34.utils.browserFactory.getDriver());
         loginPage.enterLoginEmail(faker.internet().emailAddress());
         loginPage.enterLoginPassword(org.selenium.aj34.utils.configReader.readKey("password"));
         loginPage.clickLoginButton();
-        Assert.assertTrue(driver.findElement(By.xpath("//p[text()=\"Your email or password is incorrect!\"]")).isDisplayed());
+        Assert.assertTrue(org.selenium.aj34.utils.browserFactory.getDriver().findElement(By.xpath("//p[text()=\"Your email or password is incorrect!\"]")).isDisplayed());
         logger.info("--------------FINISHED-------------------");
     }
 }

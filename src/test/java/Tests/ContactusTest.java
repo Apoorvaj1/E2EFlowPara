@@ -22,9 +22,9 @@ public class ContactusTest extends BaseTest {
     @Test
     public void contactDetails() throws AWTException, InterruptedException {
         logger.info("--------------Started-------------------");
-        homePage = new HomePage(driver);
+        homePage = new HomePage(org.selenium.aj34.utils.browserFactory.getDriver());
         homePage.click_contactUs();
-        contactUsPage = new ContactUsPage(driver);
+        contactUsPage = new ContactUsPage(org.selenium.aj34.utils.browserFactory.getDriver());
         contactUsPage.enterName(RegisterTest.firstName);
         contactUsPage.enterEmail(RegisterTest.emailAddress);
         contactUsPage.enterSubject(faker.educator().course());

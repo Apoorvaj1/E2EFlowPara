@@ -15,9 +15,9 @@ public class ProductTest_SearchBox extends BaseTest {
     @Test
     public void searchProductBySearchBox(){
         logger.info("--------------Started-------------------");
-        homePage = new HomePage(driver);
+        homePage = new HomePage(org.selenium.aj34.utils.browserFactory.getDriver());
         homePage.click_product();
-        productPage = new ProductPage(driver);
+        productPage = new ProductPage(org.selenium.aj34.utils.browserFactory.getDriver());
         productPage.enterProductInSearchBox(org.selenium.aj34.utils.configReader.readKey("productName"));
         productPage.clickSearchIcon();
         productPage.isSearchProductTextVisible();

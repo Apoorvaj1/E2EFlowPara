@@ -111,6 +111,15 @@ public class BaseClass {
         wait.until(ExpectedConditions.presenceOfElementLocated(by));
     }
 
+    public static boolean isElementVisible(WebDriver driver, By locator) {
+        try {
+            WebElement element = driver.findElement(locator);
+            return element.isDisplayed();
+        } catch (NoSuchElementException e) {
+            return false;
+        }
+    }
+
 
 
 }
