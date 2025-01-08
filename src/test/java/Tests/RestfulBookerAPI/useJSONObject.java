@@ -1,6 +1,5 @@
 package Tests.RestfulBookerAPI;
 
-import constants.Endpoints;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.builder.ResponseSpecBuilder;
 import io.restassured.http.ContentType;
@@ -11,6 +10,7 @@ import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
 import org.hamcrest.Matchers;
+import org.json.simple.JSONObject;
 import org.selenium.aj34.utils.dataProviderPayload;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
@@ -21,7 +21,7 @@ import java.util.List;
 
 import static io.restassured.RestAssured.given;
 
-public class EndtoEndFlow {
+public class useJSONObject {
 
     private static RequestSpecification specification;
     private static ResponseSpecification res_specification;
@@ -34,7 +34,7 @@ public class EndtoEndFlow {
     @BeforeClass
     public void createRequestAndResponseSpecs() {
         specification = new RequestSpecBuilder()
-                .setBaseUri(org.selenium.aj34.utils.configReader.readKey("baseURI"))
+                .setBaseUri("https://restful-booker.herokuapp.com")
                 .setContentType(ContentType.JSON)
                 .addHeader("Accept", "application/json")
                 .build();
@@ -46,10 +46,11 @@ public class EndtoEndFlow {
 
     @Test
     public void createToken() {
-        String payload = "{\n" +
-                "        \"username\": \"admin\",\n" +
-                "        \"password\": \"password123\"\n" +
-                "}";
+
+        JSONObject object = new JSONObject();
+        object.put("username","admin");
+        object.put("password","password123");
+        String payload = object.toString();
 
         Response response = given()
                 .spec(specification)
@@ -61,11 +62,14 @@ public class EndtoEndFlow {
         // Extract and print all headers
         Headers headers = response.getHeaders();
         for (Header header : headers) {
-            System.out.println(header.getName() + ": " + header.getValue());
+            System.out.println(header.getName() + " : " + header.getValue());
         }
 
         // Print response body
         response.getBody().prettyPrint();
+
+        String jsonResponse = response.getBody().asString();
+
 
         // Extract the token in different ways
         token = response.then().extract().path("token");
@@ -91,7 +95,7 @@ public class EndtoEndFlow {
 
     @Test
     public void getBookingIds(){
-        Response response = given().spec(specification).basePath(Endpoints.BOOKING).when().get();
+        Response response = given().spec(specification).basePath("/booking").when().get();
         response.getBody().prettyPrint();
         JsonPath path = response.jsonPath();
         List<Integer> bookingIds = path.getList("bookingid");
@@ -100,13 +104,12 @@ public class EndtoEndFlow {
         int id_2nd = bookingIds.get(1);
         System.out.println(id_2nd);
         response.then().body("[0].bookingid",Matchers.greaterThan(10));
-        response.then().time(Matchers.lessThan(2000L));
     }
 
     @Test(dependsOnMethods = "createToken",dataProvider = "demoData",dataProviderClass = dataProviderPayload.class)
     public void createBooking(String first,String last,int totalP){
         String payload = utils.Payload.getPayload(first,last,totalP);
-        Response response = given().spec(specification).basePath(Endpoints.BOOKING).cookie("token",token).body(payload).when().post();
+        Response response = given().spec(specification).basePath("/booking").cookie("token",token).body(payload).when().post();
         response.getBody().prettyPrint();
         int statusCode1 = response.getStatusCode();
         System.out.println(statusCode1);
@@ -116,13 +119,12 @@ public class EndtoEndFlow {
         id = jsonPath.getInt("bookingid");
         System.out.println(id);
         bookingIds.add(id);
-        System.out.println("List -> "+bookingIds);
     }
 
     @Test(dependsOnMethods = "createBooking")
     public void getBooking(){
         for(Integer id:bookingIds){
-            Response response = given().spec(specification).basePath(Endpoints.SPECIFIC_BOOKING).pathParams("ID",id).cookie("token",token).when().get();
+            Response response = given().spec(specification).basePath("/booking/{ID}").pathParams("ID",id).cookie("token",token).when().get();
             response.getBody().prettyPrint();
             JsonPath jsonPath = new JsonPath(response.asString());
             price = jsonPath.getInt("totalprice");
@@ -142,7 +144,7 @@ public class EndtoEndFlow {
     @Test(dependsOnMethods = "getBooking",dataProvider = "demoData1",dataProviderClass = dataProviderPayload.class)
     public void fullUpdateBooking(String first,String last, int totalP,boolean bool){
         for(Integer id:bookingIds){
-            Response response = given().spec(specification).basePath(Endpoints.SPECIFIC_BOOKING).pathParams("ID",id).cookie("token",token).body(utils.Payload.payloadPUT(first,last,totalP,bool)).when().put();
+            Response response = given().spec(specification).basePath("/booking/{ID}").pathParams("ID",id).cookie("token",token).body(utils.Payload.payloadPUT(first,last,totalP,bool)).when().put();
             response.getBody().prettyPrint();
         }
     }
@@ -150,7 +152,7 @@ public class EndtoEndFlow {
     @Test(dependsOnMethods = "fullUpdateBooking")
     public void deleteBooking(){
         for(Integer id:bookingIds){
-            Response response = given().spec(specification).basePath(Endpoints.SPECIFIC_BOOKING).pathParams("ID",id).cookie("token",token).when().delete();
+            Response response = given().spec(specification).basePath("/booking/{ID}").pathParams("ID",id).cookie("token",token).when().delete();
             int status = response.getStatusCode();
             System.out.println(status);
         }

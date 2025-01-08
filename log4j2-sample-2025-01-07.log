@@ -1,0 +1,131 @@
+[INFO ] 2025-01-07 07:34:13.806 [main] Utils - [TestNG] Running:
+  D:\Selenium Project\E2EFramwork\testng-UI.xml
+
+[INFO ] 2025-01-07 07:34:17.066 [main] RegisterTest - --------------Started-------------------
+[INFO ] 2025-01-07 07:34:40.071 [main] Utils - [TestNG] Running:
+  D:\Selenium Project\E2EFramwork\testng-UI.xml
+
+[INFO ] 2025-01-07 07:34:43.225 [main] RegisterTest - --------------Started-------------------
+[INFO ] 2025-01-07 07:36:44.098 [main] Utils - [TestNG] Running:
+  D:\Selenium Project\E2EFramwork\testng-UI.xml
+
+[INFO ] 2025-01-07 07:36:52.519 [main] RegisterTest - --------------Started-------------------
+[INFO ] 2025-01-07 07:37:11.103 [main] RegisterTest - --------------FINISHED-------------------
+[INFO ] 2025-01-07 07:37:45.170 [main] Utils - [TestNG] Running:
+  D:\Selenium Project\E2EFramwork\testng-UI.xml
+
+[INFO ] 2025-01-07 07:37:49.365 [main] RegisterTest - --------------Started-------------------
+[INFO ] 2025-01-07 07:39:31.889 [main] Utils - [TestNG] Running:
+  D:\Selenium Project\E2EFramwork\testng-UI.xml
+
+[INFO ] 2025-01-07 07:39:39.024 [main] RegisterTest - --------------Started-------------------
+[INFO ] 2025-01-07 07:39:52.493 [main] Utils - [TestNG] Running:
+  D:\Selenium Project\E2EFramwork\testng-UI.xml
+
+[INFO ] 2025-01-07 07:39:59.407 [main] RegisterTest - --------------Started-------------------
+[INFO ] 2025-01-07 07:40:15.902 [main] RegisterTest - --------------FINISHED-------------------
+[INFO ] 2025-01-07 07:45:30.627 [main] Utils - [TestNG] Running:
+  D:\Selenium Project\E2EFramwork\testng-UI.xml
+
+[INFO ] 2025-01-07 07:45:37.925 [main] RegisterTest - --------------Started-------------------
+[INFO ] 2025-01-07 07:45:54.469 [main] RegisterTest - --------------FINISHED-------------------
+[INFO ] 2025-01-07 07:48:14.774 [main] Utils - [TestNG] Running:
+  D:\Selenium Project\E2EFramwork\testng-UI.xml
+
+[INFO ] 2025-01-07 07:48:19.299 [main] RegisterTest - --------------Started-------------------
+[INFO ] 2025-01-07 07:48:55.143 [main] RegisterTest - --------------FINISHED-------------------
+[INFO ] 2025-01-07 07:49:36.373 [main] Utils - [TestNG] Running:
+  D:\Selenium Project\E2EFramwork\testng-UI.xml
+
+[INFO ] 2025-01-07 07:49:45.920 [main] RegisterTest - --------------Started-------------------
+[INFO ] 2025-01-07 07:50:40.627 [main] RegisterTest - --------------FINISHED-------------------
+[INFO ] 2025-01-07 07:52:16.879 [main] Utils - [TestNG] Running:
+  D:\Selenium Project\E2EFramwork\testng-UI.xml
+
+[INFO ] 2025-01-07 07:52:24.320 [main] RegisterTest - --------------Started-------------------
+[INFO ] 2025-01-07 07:52:41.725 [main] RegisterTest - --------------FINISHED-------------------
+[INFO ] 2025-01-07 09:32:31.618 [main] Utils - [TestNG] Running:
+  D:\Selenium Project\E2EFramwork\testng-UI.xml
+
+[INFO ] 2025-01-07 09:32:40.770 [main] RegisterTest - --------------Started-------------------
+[INFO ] 2025-01-07 09:32:59.651 [main] RegisterTest - --------------FINISHED-------------------
+[INFO ] 2025-01-07 09:33:32.632 [main] Utils - [TestNG] Running:
+  D:\Selenium Project\E2EFramwork\testng-UI.xml
+
+[INFO ] 2025-01-07 09:33:39.885 [main] RegisterTest - --------------Started-------------------
+[INFO ] 2025-01-07 09:33:55.045 [main] Utils - [TestNG] Running:
+  D:\Selenium Project\E2EFramwork\testng-UI.xml
+
+[INFO ] 2025-01-07 09:34:03.950 [main] RegisterTest - --------------Started-------------------
+[INFO ] 2025-01-07 09:34:20.800 [main] RegisterTest - --------------FINISHED-------------------
+[INFO ] 2025-01-07 09:38:12.853 [main] Utils - [TestNG] Running:
+  D:\Selenium Project\E2EFramwork\testng-UI.xml
+
+[INFO ] 2025-01-07 09:38:20.469 [main] RegisterTest - --------------Started-------------------
+[INFO ] 2025-01-07 09:38:37.991 [main] Utils - [TestNG] Running:
+  D:\Selenium Project\E2EFramwork\testng-UI.xml
+
+[INFO ] 2025-01-07 09:38:44.426 [main] RegisterTest - --------------Started-------------------
+[INFO ] 2025-01-07 09:39:02.422 [main] RegisterTest - --------------FINISHED-------------------
+[INFO ] 2025-01-07 09:40:59.006 [main] Utils - [TestNG] Running:
+  D:\Selenium Project\E2EFramwork\testng-UI.xml
+
+[INFO ] 2025-01-07 09:41:03.680 [main] RegisterTest - --------------Started-------------------
+[INFO ] 2025-01-07 09:41:34.507 [main] RegisterTest - --------------FINISHED-------------------
+[INFO ] 2025-01-07 09:42:53.394 [main] Utils - [TestNG] Running:
+  D:\Selenium Project\E2EFramwork\testng-UI.xml
+
+[INFO ] 2025-01-07 09:43:00.360 [main] RegisterTest - --------------Started-------------------
+[INFO ] 2025-01-07 09:43:20.140 [main] Utils - [TestNG] Running:
+  D:\Selenium Project\E2EFramwork\testng-UI.xml
+
+[INFO ] 2025-01-07 09:43:26.662 [main] RegisterTest - --------------Started-------------------
+[INFO ] 2025-01-07 09:43:40.358 [main] RegisterTest - --------------FINISHED-------------------
+[INFO ] 2025-01-07 09:46:47.071 [main] Utils - [TestNG] Running:
+  D:\Selenium Project\E2EFramwork\testng-UI.xml
+
+[INFO ] 2025-01-07 09:46:54.083 [main] RegisterTest - --------------Started-------------------
+[INFO ] 2025-01-07 09:47:32.423 [main] RegisterTest - --------------FINISHED-------------------
+[INFO ] 2025-01-07 09:53:41.538 [main] Utils - [TestNG] Running:
+  D:\Selenium Project\E2EFramwork\testng-UI.xml
+
+[INFO ] 2025-01-07 09:53:48.377 [main] RegisterTest - --------------Started-------------------
+[INFO ] 2025-01-07 09:54:03.430 [main] RegisterTest - --------------FINISHED-------------------
+[INFO ] 2025-01-07 09:55:24.236 [main] Utils - [TestNG] Running:
+  D:\Selenium Project\E2EFramwork\testng-UI.xml
+
+[INFO ] 2025-01-07 09:55:31.147 [main] RegisterTest - --------------Started-------------------
+[INFO ] 2025-01-07 09:55:45.709 [main] RegisterTest - --------------FINISHED-------------------
+[INFO ] 2025-01-07 10:03:00.937 [main] Utils - [TestNG] Running:
+  D:\Selenium Project\E2EFramwork\testng-UI.xml
+
+[INFO ] 2025-01-07 10:03:09.335 [main] RegisterTest - --------------Started-------------------
+[INFO ] 2025-01-07 10:03:27.394 [main] RegisterTest - --------------FINISHED-------------------
+[INFO ] 2025-01-07 10:11:19.637 [main] Utils - [TestNG] Running:
+  D:\Selenium Project\E2EFramwork\testng-UI.xml
+
+[INFO ] 2025-01-07 10:11:24.876 [main] RegisterTest - --------------Started-------------------
+[INFO ] 2025-01-07 10:11:44.203 [main] RegisterTest - --------------FINISHED-------------------
+[INFO ] 2025-01-07 10:14:08.591 [main] Utils - [TestNG] Running:
+  D:\Selenium Project\E2EFramwork\testng-UI.xml
+
+[INFO ] 2025-01-07 10:14:20.130 [main] RegisterTest - --------------Started-------------------
+[INFO ] 2025-01-07 10:14:33.286 [main] RegisterTest - --------------FINISHED-------------------
+[INFO ] 2025-01-07 14:06:24.967 [main] Utils - [TestNG] Running:
+  C:\Users\apoor\AppData\Local\JetBrains\IdeaIC2023.2\temp-testng-customsuite.xml
+
+[INFO ] 2025-01-07 15:37:33.650 [main] Utils - [TestNG] Running:
+  C:\Users\apoor\AppData\Local\JetBrains\IdeaIC2023.2\temp-testng-customsuite.xml
+
+[INFO ] 2025-01-07 16:17:07.016 [main] Utils - [TestNG] Running:
+  C:\Users\apoor\AppData\Local\JetBrains\IdeaIC2023.2\temp-testng-customsuite.xml
+
+[INFO ] 2025-01-07 17:45:14.084 [main] Utils - [TestNG] Running:
+  C:\Users\apoor\AppData\Local\JetBrains\IdeaIC2023.2\temp-testng-customsuite.xml
+
+[INFO ] 2025-01-07 17:46:06.388 [main] Utils - [TestNG] Running:
+  C:\Users\apoor\AppData\Local\JetBrains\IdeaIC2023.2\temp-testng-customsuite.xml
+
+[INFO ] 2025-01-07 18:20:56.665 [main] Utils - [TestNG] Running:
+  C:\Users\apoor\AppData\Local\JetBrains\IdeaIC2023.2\temp-testng-customsuite.xml
+
