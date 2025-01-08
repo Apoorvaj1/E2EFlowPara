@@ -5,17 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9df1aba4-6558-4f14-bf82-96de90f87021" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/constants/Endpoints.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/RestfulBookerAPI/authResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/RestfulBookerAPI/createResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/RestfulBookerAPI/implementPOJOF.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/RestfulBookerAPI/useJSONObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/RestfulBookerAPI/usePOJO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/RestfulBookerAPI/requestAndResponseSpecD.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log4j2/log4j2-test-automation.log" beforeDir="false" afterPath="$PROJECT_DIR$/log4j2/log4j2-test-automation.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Tests/RestfulBookerAPI/EndtoEndFlow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/RestfulBookerAPI/EndtoEndFlow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/RestfulBookerAPI/implementPOJOF.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/RestfulBookerAPI/implementPOJOF.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

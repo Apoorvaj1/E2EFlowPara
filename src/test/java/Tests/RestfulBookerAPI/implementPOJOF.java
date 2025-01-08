@@ -49,7 +49,7 @@ public class implementPOJOF {
     public void createToken() throws JsonProcessingException {
 
 
-        ObjectMapper mapper = new ObjectMapper();
+       ObjectMapper mapper = new ObjectMapper();
         usePOJO pojo = new usePOJO();
         pojo.setUsername("admin");
         pojo.setPassword("password123");
