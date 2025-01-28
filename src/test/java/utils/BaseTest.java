@@ -8,6 +8,7 @@ import org.openqa.selenium.edge.EdgeOptions;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
 
+import java.io.File;
 import java.io.IOException;
 import java.time.Duration;
 
@@ -44,6 +45,8 @@ public class BaseTest {
         switch (browserName.toLowerCase()){
             case "edge":
                 EdgeOptions options = new EdgeOptions();
+//                File file = new File("C:\\Users\\apoor\\Downloads\\extensions\\uBlock-Origin-Lite-Chrome-Web-Store.crx");
+//                options.addExtensions(file);
                 options.addArguments("--disable-notifications");
                 options.addArguments("--disable-popup-blocking");
                 driver = new EdgeDriver(options);
@@ -51,6 +54,8 @@ public class BaseTest {
 
             case "chrome":
                 ChromeOptions options1 = new ChromeOptions();
+//                File file1 = new File("C:\\Users\\apoor\\Downloads\\extensions\\uBlock-Origin-Lite-Chrome-Web-Store.crx");
+//                options1.addExtensions(file1);
                 options1.addArguments("--disable-notifications");
                 options1.addArguments("--disable-popup-blocking");
                 driver = new ChromeDriver(options1);

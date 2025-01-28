@@ -3,6 +3,7 @@
 <suite name="All Test Suite">
     <listeners>
         <listener class-name="utils.TestListener"/>
+<!--        <listener class-name="com.aventstack.chaintest.plugins.ChainTestListener"/>-->
     </listeners>
     <test name="Demo">
         <classes>

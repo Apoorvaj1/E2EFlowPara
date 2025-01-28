@@ -1,0 +1,263 @@
+[ERROR] 2025-01-12 12:56:04.621 [main] AzureBlobClient - Failed to create Azure Blob Storage client
+java.lang.IllegalArgumentException: Invalid URL format. URL: null
+	at com.azure.storage.blob.BlobUrlParts.parse(BlobUrlParts.java:349) ~[azure-storage-blob-12.28.0.jar:12.28.0]
+	at com.azure.storage.blob.implementation.util.BuilderHelper.httpsValidation(BuilderHelper.java:192) ~[azure-storage-blob-12.28.0.jar:12.28.0]
+	at com.azure.storage.blob.implementation.util.BuilderHelper.buildPipeline(BuilderHelper.java:123) ~[azure-storage-blob-12.28.0.jar:12.28.0]
+	at com.azure.storage.blob.BlobServiceClientBuilder.buildAsyncClient(BlobServiceClientBuilder.java:137) ~[azure-storage-blob-12.28.0.jar:12.28.0]
+	at com.azure.storage.blob.BlobServiceClientBuilder.buildClient(BlobServiceClientBuilder.java:116) ~[azure-storage-blob-12.28.0.jar:12.28.0]
+	at com.aventstack.chaintest.storage.AzureBlobClient.getServiceClient(AzureBlobClient.java:63) ~[chaintest-core-1.0.1.jar:?]
+	at com.aventstack.chaintest.storage.AzureBlobClient.getContainerClient(AzureBlobClient.java:71) ~[chaintest-core-1.0.1.jar:?]
+	at com.aventstack.chaintest.storage.AzureBlobClient.create(AzureBlobClient.java:47) ~[chaintest-core-1.0.1.jar:?]
+	at com.aventstack.chaintest.service.ChainPluginService.startStorageService(ChainPluginService.java:135) ~[chaintest-core-1.0.1.jar:?]
+	at com.aventstack.chaintest.service.ChainPluginService.init(ChainPluginService.java:99) ~[chaintest-core-1.0.1.jar:?]
+	at java.util.Optional.ifPresent(Optional.java:178) [?:?]
+	at com.aventstack.chaintest.service.ChainPluginService.start(ChainPluginService.java:90) [chaintest-core-1.0.1.jar:?]
+	at com.aventstack.chaintest.plugins.ChainTestListener.onExecutionStart(ChainTestListener.java:29) [chaintest-testng-1.0.1.jar:?]
+	at org.testng.TestNG.runExecutionListeners(TestNG.java:1129) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1074) [testng-7.10.2.jar:7.10.2]
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66) [testng-rt.jar:?]
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105) [testng-rt.jar:?]
+Caused by: java.net.MalformedURLException: Cannot invoke "String.length()" because "spec" is null
+	at java.net.URL.<init>(URL.java:806) ~[?:?]
+	at java.net.URL.<init>(URL.java:654) ~[?:?]
+	at java.net.URL.<init>(URL.java:590) ~[?:?]
+	at com.azure.storage.blob.BlobUrlParts.parse(BlobUrlParts.java:347) ~[azure-storage-blob-12.28.0.jar:12.28.0]
+	... 16 more
+Caused by: java.lang.NullPointerException: Cannot invoke "String.length()" because "spec" is null
+	at java.net.URL.<init>(URL.java:712) ~[?:?]
+	at java.net.URL.<init>(URL.java:654) ~[?:?]
+	at java.net.URL.<init>(URL.java:590) ~[?:?]
+	at com.azure.storage.blob.BlobUrlParts.parse(BlobUrlParts.java:347) ~[azure-storage-blob-12.28.0.jar:12.28.0]
+	... 16 more
+[ERROR] 2025-01-12 12:56:36.274 [main] AzureBlobClient - Failed to create Azure Blob Storage client
+java.lang.IllegalArgumentException: Invalid URL format. URL: null
+	at com.azure.storage.blob.BlobUrlParts.parse(BlobUrlParts.java:349) ~[azure-storage-blob-12.28.0.jar:12.28.0]
+	at com.azure.storage.blob.implementation.util.BuilderHelper.httpsValidation(BuilderHelper.java:192) ~[azure-storage-blob-12.28.0.jar:12.28.0]
+	at com.azure.storage.blob.implementation.util.BuilderHelper.buildPipeline(BuilderHelper.java:123) ~[azure-storage-blob-12.28.0.jar:12.28.0]
+	at com.azure.storage.blob.BlobServiceClientBuilder.buildAsyncClient(BlobServiceClientBuilder.java:137) ~[azure-storage-blob-12.28.0.jar:12.28.0]
+	at com.azure.storage.blob.BlobServiceClientBuilder.buildClient(BlobServiceClientBuilder.java:116) ~[azure-storage-blob-12.28.0.jar:12.28.0]
+	at com.aventstack.chaintest.storage.AzureBlobClient.getServiceClient(AzureBlobClient.java:63) ~[chaintest-core-1.0.1.jar:?]
+	at com.aventstack.chaintest.storage.AzureBlobClient.getContainerClient(AzureBlobClient.java:71) ~[chaintest-core-1.0.1.jar:?]
+	at com.aventstack.chaintest.storage.AzureBlobClient.create(AzureBlobClient.java:47) ~[chaintest-core-1.0.1.jar:?]
+	at com.aventstack.chaintest.service.ChainPluginService.startStorageService(ChainPluginService.java:135) ~[chaintest-core-1.0.1.jar:?]
+	at com.aventstack.chaintest.service.ChainPluginService.init(ChainPluginService.java:99) ~[chaintest-core-1.0.1.jar:?]
+	at java.util.Optional.ifPresent(Optional.java:178) [?:?]
+	at com.aventstack.chaintest.service.ChainPluginService.start(ChainPluginService.java:90) [chaintest-core-1.0.1.jar:?]
+	at com.aventstack.chaintest.plugins.ChainTestListener.onExecutionStart(ChainTestListener.java:29) [chaintest-testng-1.0.1.jar:?]
+	at org.testng.TestNG.runExecutionListeners(TestNG.java:1129) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1074) [testng-7.10.2.jar:7.10.2]
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66) [testng-rt.jar:?]
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105) [testng-rt.jar:?]
+Caused by: java.net.MalformedURLException: Cannot invoke "String.length()" because "spec" is null
+	at java.net.URL.<init>(URL.java:806) ~[?:?]
+	at java.net.URL.<init>(URL.java:654) ~[?:?]
+	at java.net.URL.<init>(URL.java:590) ~[?:?]
+	at com.azure.storage.blob.BlobUrlParts.parse(BlobUrlParts.java:347) ~[azure-storage-blob-12.28.0.jar:12.28.0]
+	... 16 more
+Caused by: java.lang.NullPointerException: Cannot invoke "String.length()" because "spec" is null
+	at java.net.URL.<init>(URL.java:712) ~[?:?]
+	at java.net.URL.<init>(URL.java:654) ~[?:?]
+	at java.net.URL.<init>(URL.java:590) ~[?:?]
+	at com.azure.storage.blob.BlobUrlParts.parse(BlobUrlParts.java:347) ~[azure-storage-blob-12.28.0.jar:12.28.0]
+	... 16 more
+[ERROR] 2025-01-12 12:57:35.795 [main] AzureBlobClient - Failed to create Azure Blob Storage client
+java.lang.IllegalArgumentException: Invalid URL format. URL: null
+	at com.azure.storage.blob.BlobUrlParts.parse(BlobUrlParts.java:349) ~[azure-storage-blob-12.28.0.jar:12.28.0]
+	at com.azure.storage.blob.implementation.util.BuilderHelper.httpsValidation(BuilderHelper.java:192) ~[azure-storage-blob-12.28.0.jar:12.28.0]
+	at com.azure.storage.blob.implementation.util.BuilderHelper.buildPipeline(BuilderHelper.java:123) ~[azure-storage-blob-12.28.0.jar:12.28.0]
+	at com.azure.storage.blob.BlobServiceClientBuilder.buildAsyncClient(BlobServiceClientBuilder.java:137) ~[azure-storage-blob-12.28.0.jar:12.28.0]
+	at com.azure.storage.blob.BlobServiceClientBuilder.buildClient(BlobServiceClientBuilder.java:116) ~[azure-storage-blob-12.28.0.jar:12.28.0]
+	at com.aventstack.chaintest.storage.AzureBlobClient.getServiceClient(AzureBlobClient.java:63) ~[chaintest-core-1.0.1.jar:?]
+	at com.aventstack.chaintest.storage.AzureBlobClient.getContainerClient(AzureBlobClient.java:71) ~[chaintest-core-1.0.1.jar:?]
+	at com.aventstack.chaintest.storage.AzureBlobClient.create(AzureBlobClient.java:47) ~[chaintest-core-1.0.1.jar:?]
+	at com.aventstack.chaintest.service.ChainPluginService.startStorageService(ChainPluginService.java:135) ~[chaintest-core-1.0.1.jar:?]
+	at com.aventstack.chaintest.service.ChainPluginService.init(ChainPluginService.java:99) ~[chaintest-core-1.0.1.jar:?]
+	at java.util.Optional.ifPresent(Optional.java:178) [?:?]
+	at com.aventstack.chaintest.service.ChainPluginService.start(ChainPluginService.java:90) [chaintest-core-1.0.1.jar:?]
+	at com.aventstack.chaintest.plugins.ChainTestListener.onExecutionStart(ChainTestListener.java:29) [chaintest-testng-1.0.1.jar:?]
+	at org.testng.TestNG.runExecutionListeners(TestNG.java:1129) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1074) [testng-7.10.2.jar:7.10.2]
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66) [testng-rt.jar:?]
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105) [testng-rt.jar:?]
+Caused by: java.net.MalformedURLException: Cannot invoke "String.length()" because "spec" is null
+	at java.net.URL.<init>(URL.java:806) ~[?:?]
+	at java.net.URL.<init>(URL.java:654) ~[?:?]
+	at java.net.URL.<init>(URL.java:590) ~[?:?]
+	at com.azure.storage.blob.BlobUrlParts.parse(BlobUrlParts.java:347) ~[azure-storage-blob-12.28.0.jar:12.28.0]
+	... 16 more
+Caused by: java.lang.NullPointerException: Cannot invoke "String.length()" because "spec" is null
+	at java.net.URL.<init>(URL.java:712) ~[?:?]
+	at java.net.URL.<init>(URL.java:654) ~[?:?]
+	at java.net.URL.<init>(URL.java:590) ~[?:?]
+	at com.azure.storage.blob.BlobUrlParts.parse(BlobUrlParts.java:347) ~[azure-storage-blob-12.28.0.jar:12.28.0]
+	... 16 more
+[INFO ] 2025-01-12 12:58:30.013 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 1 ms.
+[INFO ] 2025-01-12 12:58:30.026 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 5 ms.
+[INFO ] 2025-01-12 12:58:30.029 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO ] 2025-01-12 12:58:30.029 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO ] 2025-01-12 12:58:30.030 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO ] 2025-01-12 12:58:30.030 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO ] 2025-01-12 12:58:30.031 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO ] 2025-01-12 12:58:30.031 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO ] 2025-01-12 12:58:30.032 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO ] 2025-01-12 12:58:30.032 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO ] 2025-01-12 12:58:30.033 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO ] 2025-01-12 12:58:30.033 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO ] 2025-01-12 12:58:30.034 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO ] 2025-01-12 12:58:30.034 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO ] 2025-01-12 12:58:30.034 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO ] 2025-01-12 12:58:30.034 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO ] 2025-01-12 12:58:30.039 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO ] 2025-01-12 12:58:30.039 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO ] 2025-01-12 12:58:30.058 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 11 ms.
+[INFO ] 2025-01-12 12:58:30.073 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 14 ms.
+[INFO ] 2025-01-12 12:58:30.079 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO ] 2025-01-12 12:58:30.079 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO ] 2025-01-12 12:58:30.079 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO ] 2025-01-12 12:58:30.079 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO ] 2025-01-12 12:58:30.081 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 1 ms.
+[INFO ] 2025-01-12 12:58:30.081 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO ] 2025-01-12 12:58:30.083 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO ] 2025-01-12 12:58:30.084 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO ] 2025-01-12 12:58:30.084 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO ] 2025-01-12 12:58:30.085 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO ] 2025-01-12 12:58:30.099 [main] Utils - [TestNG] Running:
+  D:\Selenium Project\E2EFramwork\testng.xml
+
+[INFO ] 2025-01-12 12:58:30.132 [main] Utils - [Utils] DynamicGraphHelper.createDynamicGraph() took 8 ms.
+[INFO ] 2025-01-12 12:58:44.102 [main] Utils - [TestNG] Time taken by org.testng.reporters.jq.Main@350f18a6: 118 ms
+[INFO ] 2025-01-12 12:58:44.103 [main] Utils - [TestNG] Time taken by org.testng.reporters.FailedReporter@147c00aa: 1 ms
+[INFO ] 2025-01-12 12:58:44.125 [main] Utils - [TestNG] Time taken by org.testng.reporters.XMLReporter@65d7eea4: 22 ms
+[INFO ] 2025-01-12 12:58:44.134 [main] Utils - [TestNG] Time taken by org.testng.reporters.EmailableReporter2@1d3a03fe: 9 ms
+[INFO ] 2025-01-12 12:58:44.168 [main] Utils - [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@277bc3a5: 34 ms
+[INFO ] 2025-01-12 12:58:44.168 [main] Utils - [TestNG] Time taken by org.testng.internal.ExitCodeListener@214fba74: 0 ms
+[INFO ] 2025-01-12 12:59:02.506 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 1 ms.
+[INFO ] 2025-01-12 12:59:02.517 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 3 ms.
+[INFO ] 2025-01-12 12:59:02.519 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO ] 2025-01-12 12:59:02.519 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO ] 2025-01-12 12:59:02.521 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO ] 2025-01-12 12:59:02.521 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO ] 2025-01-12 12:59:02.522 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO ] 2025-01-12 12:59:02.522 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO ] 2025-01-12 12:59:02.522 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO ] 2025-01-12 12:59:02.522 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO ] 2025-01-12 12:59:02.522 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO ] 2025-01-12 12:59:02.523 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO ] 2025-01-12 12:59:02.523 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO ] 2025-01-12 12:59:02.524 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO ] 2025-01-12 12:59:02.524 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO ] 2025-01-12 12:59:02.524 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO ] 2025-01-12 12:59:02.528 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO ] 2025-01-12 12:59:02.529 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO ] 2025-01-12 12:59:02.538 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 7 ms.
+[INFO ] 2025-01-12 12:59:02.549 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 10 ms.
+[INFO ] 2025-01-12 12:59:02.553 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO ] 2025-01-12 12:59:02.554 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO ] 2025-01-12 12:59:02.554 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO ] 2025-01-12 12:59:02.554 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO ] 2025-01-12 12:59:02.556 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 1 ms.
+[INFO ] 2025-01-12 12:59:02.556 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO ] 2025-01-12 12:59:02.558 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO ] 2025-01-12 12:59:02.559 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO ] 2025-01-12 12:59:02.559 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO ] 2025-01-12 12:59:02.559 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO ] 2025-01-12 12:59:02.572 [main] Utils - [TestNG] Running:
+  D:\Selenium Project\E2EFramwork\testng.xml
+
+[INFO ] 2025-01-12 12:59:02.608 [main] Utils - [Utils] DynamicGraphHelper.createDynamicGraph() took 7 ms.
+[INFO ] 2025-01-12 12:59:08.453 [main] Utils - [TestNG] Time taken by org.testng.reporters.jq.Main@4cd7e993: 346 ms
+[INFO ] 2025-01-12 12:59:08.455 [main] Utils - [TestNG] Time taken by org.testng.reporters.FailedReporter@685e6a68: 0 ms
+[INFO ] 2025-01-12 12:59:08.474 [main] Utils - [TestNG] Time taken by org.testng.reporters.XMLReporter@c94bd18: 18 ms
+[INFO ] 2025-01-12 12:59:08.500 [main] Utils - [TestNG] Time taken by org.testng.reporters.EmailableReporter2@794cb26b: 26 ms
+[INFO ] 2025-01-12 12:59:08.514 [main] Utils - [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@1d3a03fe: 12 ms
+[INFO ] 2025-01-12 12:59:08.514 [main] Utils - [TestNG] Time taken by org.testng.internal.ExitCodeListener@f48a080: 0 ms
+[ERROR] 2025-01-12 13:00:07.481 [main] AzureBlobClient - Failed to create Azure Blob Storage client
+java.lang.IllegalArgumentException: Invalid URL format. URL: null
+	at com.azure.storage.blob.BlobUrlParts.parse(BlobUrlParts.java:349) ~[azure-storage-blob-12.28.0.jar:12.28.0]
+	at com.azure.storage.blob.implementation.util.BuilderHelper.httpsValidation(BuilderHelper.java:192) ~[azure-storage-blob-12.28.0.jar:12.28.0]
+	at com.azure.storage.blob.implementation.util.BuilderHelper.buildPipeline(BuilderHelper.java:123) ~[azure-storage-blob-12.28.0.jar:12.28.0]
+	at com.azure.storage.blob.BlobServiceClientBuilder.buildAsyncClient(BlobServiceClientBuilder.java:137) ~[azure-storage-blob-12.28.0.jar:12.28.0]
+	at com.azure.storage.blob.BlobServiceClientBuilder.buildClient(BlobServiceClientBuilder.java:116) ~[azure-storage-blob-12.28.0.jar:12.28.0]
+	at com.aventstack.chaintest.storage.AzureBlobClient.getServiceClient(AzureBlobClient.java:63) ~[chaintest-core-1.0.1.jar:?]
+	at com.aventstack.chaintest.storage.AzureBlobClient.getContainerClient(AzureBlobClient.java:71) ~[chaintest-core-1.0.1.jar:?]
+	at com.aventstack.chaintest.storage.AzureBlobClient.create(AzureBlobClient.java:47) ~[chaintest-core-1.0.1.jar:?]
+	at com.aventstack.chaintest.service.ChainPluginService.startStorageService(ChainPluginService.java:135) ~[chaintest-core-1.0.1.jar:?]
+	at com.aventstack.chaintest.service.ChainPluginService.init(ChainPluginService.java:99) ~[chaintest-core-1.0.1.jar:?]
+	at java.util.Optional.ifPresent(Optional.java:178) [?:?]
+	at com.aventstack.chaintest.service.ChainPluginService.start(ChainPluginService.java:90) [chaintest-core-1.0.1.jar:?]
+	at com.aventstack.chaintest.plugins.ChainTestListener.onExecutionStart(ChainTestListener.java:29) [chaintest-testng-1.0.1.jar:?]
+	at org.testng.TestNG.runExecutionListeners(TestNG.java:1129) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1074) [testng-7.10.2.jar:7.10.2]
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66) [testng-rt.jar:?]
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105) [testng-rt.jar:?]
+Caused by: java.net.MalformedURLException: Cannot invoke "String.length()" because "spec" is null
+	at java.net.URL.<init>(URL.java:806) ~[?:?]
+	at java.net.URL.<init>(URL.java:654) ~[?:?]
+	at java.net.URL.<init>(URL.java:590) ~[?:?]
+	at com.azure.storage.blob.BlobUrlParts.parse(BlobUrlParts.java:347) ~[azure-storage-blob-12.28.0.jar:12.28.0]
+	... 16 more
+Caused by: java.lang.NullPointerException: Cannot invoke "String.length()" because "spec" is null
+	at java.net.URL.<init>(URL.java:712) ~[?:?]
+	at java.net.URL.<init>(URL.java:654) ~[?:?]
+	at java.net.URL.<init>(URL.java:590) ~[?:?]
+	at com.azure.storage.blob.BlobUrlParts.parse(BlobUrlParts.java:347) ~[azure-storage-blob-12.28.0.jar:12.28.0]
+	... 16 more
+[INFO ] 2025-01-12 13:03:03.098 [main] ContactusTest - --------------Started-------------------
+[INFO ] 2025-01-12 13:03:07.484 [main] LogoutTest - --------------Started-------------------
+[INFO ] 2025-01-12 13:03:16.494 [main] RegisterTest - --------------Started-------------------
+[INFO ] 2025-01-12 13:03:19.154 [main] SubscriptionCartTest - --------------Started-------------------
+[INFO ] 2025-01-12 13:03:21.603 [main] SubscriptionTest - --------------Started-------------------
+[ERROR] 2025-01-12 13:03:49.881 [main] AzureBlobClient - Failed to create Azure Blob Storage client
+java.lang.IllegalArgumentException: Invalid URL format. URL: null
+	at com.azure.storage.blob.BlobUrlParts.parse(BlobUrlParts.java:349) ~[azure-storage-blob-12.28.0.jar:12.28.0]
+	at com.azure.storage.blob.implementation.util.BuilderHelper.httpsValidation(BuilderHelper.java:192) ~[azure-storage-blob-12.28.0.jar:12.28.0]
+	at com.azure.storage.blob.implementation.util.BuilderHelper.buildPipeline(BuilderHelper.java:123) ~[azure-storage-blob-12.28.0.jar:12.28.0]
+	at com.azure.storage.blob.BlobServiceClientBuilder.buildAsyncClient(BlobServiceClientBuilder.java:137) ~[azure-storage-blob-12.28.0.jar:12.28.0]
+	at com.azure.storage.blob.BlobServiceClientBuilder.buildClient(BlobServiceClientBuilder.java:116) ~[azure-storage-blob-12.28.0.jar:12.28.0]
+	at com.aventstack.chaintest.storage.AzureBlobClient.getServiceClient(AzureBlobClient.java:63) ~[chaintest-core-1.0.1.jar:?]
+	at com.aventstack.chaintest.storage.AzureBlobClient.getContainerClient(AzureBlobClient.java:71) ~[chaintest-core-1.0.1.jar:?]
+	at com.aventstack.chaintest.storage.AzureBlobClient.create(AzureBlobClient.java:47) ~[chaintest-core-1.0.1.jar:?]
+	at com.aventstack.chaintest.service.ChainPluginService.startStorageService(ChainPluginService.java:135) ~[chaintest-core-1.0.1.jar:?]
+	at com.aventstack.chaintest.service.ChainPluginService.init(ChainPluginService.java:99) ~[chaintest-core-1.0.1.jar:?]
+	at java.util.Optional.ifPresent(Optional.java:178) [?:?]
+	at com.aventstack.chaintest.service.ChainPluginService.start(ChainPluginService.java:90) [chaintest-core-1.0.1.jar:?]
+	at com.aventstack.chaintest.plugins.ChainTestListener.onExecutionStart(ChainTestListener.java:29) [chaintest-testng-1.0.1.jar:?]
+	at org.testng.TestNG.runExecutionListeners(TestNG.java:1129) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1074) [testng-7.10.2.jar:7.10.2]
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66) [testng-rt.jar:?]
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105) [testng-rt.jar:?]
+Caused by: java.net.MalformedURLException: Cannot invoke "String.length()" because "spec" is null
+	at java.net.URL.<init>(URL.java:806) ~[?:?]
+	at java.net.URL.<init>(URL.java:654) ~[?:?]
+	at java.net.URL.<init>(URL.java:590) ~[?:?]
+	at com.azure.storage.blob.BlobUrlParts.parse(BlobUrlParts.java:347) ~[azure-storage-blob-12.28.0.jar:12.28.0]
+	... 16 more
+Caused by: java.lang.NullPointerException: Cannot invoke "String.length()" because "spec" is null
+	at java.net.URL.<init>(URL.java:712) ~[?:?]
+	at java.net.URL.<init>(URL.java:654) ~[?:?]
+	at java.net.URL.<init>(URL.java:590) ~[?:?]
+	at com.azure.storage.blob.BlobUrlParts.parse(BlobUrlParts.java:347) ~[azure-storage-blob-12.28.0.jar:12.28.0]
+	... 16 more
+[INFO ] 2025-01-12 13:04:34.411 [main] Utils - [TestNG] Running:
+  D:\Selenium Project\E2EFramwork\testng-UI.xml
+
+[INFO ] 2025-01-12 13:04:40.557 [main] RegisterTest - --------------Started-------------------
+[INFO ] 2025-01-12 13:04:51.343 [main] RegisterTest - --------------FINISHED-------------------
+[INFO ] 2025-01-12 13:04:57.384 [main] LoginTestValidCred - --------------Started-------------------
+[INFO ] 2025-01-12 13:05:01.644 [main] LoginTestValidCred - --------------FINISHED-------------------
+[INFO ] 2025-01-12 13:05:05.616 [main] LoginTestInvalidCred - --------------Started-------------------
+[INFO ] 2025-01-12 13:05:08.083 [main] LoginTestInvalidCred - --------------FINISHED-------------------
+[INFO ] 2025-01-12 13:05:11.962 [main] LogoutTest - --------------Started-------------------
+[INFO ] 2025-01-12 13:05:16.313 [main] LogoutTest - --------------FINISHED-------------------
+[INFO ] 2025-01-12 13:05:25.045 [main] RegisterExistingUser - --------------Started-------------------
+[INFO ] 2025-01-12 13:05:28.291 [main] RegisterExistingUser - --------------FINISHED-------------------
+[INFO ] 2025-01-12 13:05:33.977 [main] ContactusTest - --------------Started-------------------
+[INFO ] 2025-01-12 13:05:53.595 [main] ContactusTest - --------------FINISHED-------------------
+[INFO ] 2025-01-12 13:06:22.273 [main] ProductTest_SearchBox - --------------Started-------------------
+[INFO ] 2025-01-12 13:06:25.082 [main] ProductTest_SearchBox - --------------FINISHED-------------------
+[INFO ] 2025-01-12 13:06:29.320 [main] SubscriptionTest - --------------Started-------------------
+[INFO ] 2025-01-12 13:06:31.576 [main] SubscriptionTest - --------------FINISHED-------------------
+[INFO ] 2025-01-12 13:06:35.801 [main] SubscriptionCartTest - --------------Started-------------------
+[INFO ] 2025-01-12 13:06:39.255 [main] SubscriptionCartTest - --------------FINISHED-------------------
+[INFO ] 2025-01-12 13:06:43.013 [main] RegisterTest - --------------Started-------------------
+[INFO ] 2025-01-12 13:06:51.382 [main] RegisterTest - --------------FINISHED-------------------

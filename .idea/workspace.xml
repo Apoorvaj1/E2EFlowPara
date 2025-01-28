@@ -5,11 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9df1aba4-6558-4f14-bf82-96de90f87021" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/RestfulBookerAPI/requestAndResponseSpecD.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/chaintest.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log4j2/log4j2-test-automation.log" beforeDir="false" afterPath="$PROJECT_DIR$/log4j2/log4j2-test-automation.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/RestfulBookerAPI/EndtoEndFlow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/RestfulBookerAPI/EndtoEndFlow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/selenium/aj34/utils/excelReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/selenium/aj34/utils/excelReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/RestfulBookerAPI/EndtoEndFlow_Faker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/RestfulBookerAPI/EndtoEndFlow_Faker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/RestfulBookerAPI/createResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/RestfulBookerAPI/createResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Tests/RestfulBookerAPI/implementPOJOF.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/RestfulBookerAPI/implementPOJOF.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/selenium/aj34/orangeHRM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/selenium/aj34/orangeHRM.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utils/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utils/Payload.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/Payload.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/emailable-report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/testng-results.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng-API.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng-API.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng-UI.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng-UI.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,15 +49,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "QA",
-    "last_opened_file_path": "D:/Selenium Project/E2EFramwork"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;QA&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Selenium Project/E2EFramwork&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Selenium Project\E2EFramwork" />

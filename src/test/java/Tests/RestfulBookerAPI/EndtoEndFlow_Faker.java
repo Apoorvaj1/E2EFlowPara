@@ -55,7 +55,7 @@ public class EndtoEndFlow_Faker {
                 .basePath("/auth")
                 .body(payload)
                 .when()
-                .post();
+                .post().then().extract().response();
 
         // Extract and print all headers
         Headers headers = response.getHeaders();
@@ -90,7 +90,7 @@ public class EndtoEndFlow_Faker {
 
     @Test
     public void getBookingIds(){
-        Response response = given().spec(specification).basePath("/booking").when().get();
+        Response response = given().spec(specification).basePath("/booking").when().get().then().extract().response();
         response.getBody().prettyPrint();
         JsonPath path = response.jsonPath();
         List<Integer> bookingIds = path.getList("bookingid");
@@ -99,6 +99,8 @@ public class EndtoEndFlow_Faker {
         int id_2nd = bookingIds.get(1);
         System.out.println(id_2nd);
         response.then().body("[0].bookingid",Matchers.greaterThan(10));
+
+
     }
 
     @Test(dependsOnMethods = "createToken",dataProvider = "demoData1",dataProviderClass = dataProviderPayload.class)

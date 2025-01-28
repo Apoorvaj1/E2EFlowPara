@@ -4,7 +4,7 @@ public class Payload {
 
 
     public static String getPayload(String first,String last,int price){
-        String payload = "{\n" +
+        return  "{\n" +
                 "    \"firstname\" : \""+first+"\",\n" +
                 "    \"lastname\" : \""+last+"\",\n" +
                 "    \"totalprice\" : "+price+",\n" +
@@ -15,7 +15,7 @@ public class Payload {
                 "    },\n" +
                 "    \"additionalneeds\" : \"Breakfast\"\n" +
                 "}";
-                return payload;
+
     }
     public static String payloadPUT(String first,String last,int price,boolean bool){
         String payload = "{\n" +

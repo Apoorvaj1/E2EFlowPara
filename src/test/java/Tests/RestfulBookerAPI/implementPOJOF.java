@@ -72,6 +72,9 @@ public class implementPOJOF {
         }
 
 
+        String body_12 = response.getBody().asString();
+        System.out.println("-----------------RESPONSE BODY IS---------------------");
+        System.out.println(body_12);
 
         // Print response body
         response.getBody().prettyPrint();
@@ -101,7 +104,7 @@ public class implementPOJOF {
 
 
         authResponse res = mapper.readValue(response.getBody().asString(),authResponse.class);
-        System.out.println("Token res is "+res);
+        System.out.println("Token res is "+res.getToken());
 
     }
 
@@ -129,6 +132,9 @@ public class implementPOJOF {
         createResponse res = mapper.readValue(json,createResponse.class);
         String firstname = res.getBooking().getFirstname();
         System.out.println("Firstname value is ----------------"+firstname);
+
+        String checkin_date = res.getBooking().getBookingdates().getCheckin();
+        System.out.println(checkin_date);
         int statusCode1 = response.getStatusCode();
         System.out.println(statusCode1);
         String lastname = response.then().extract().path("booking.lastname");

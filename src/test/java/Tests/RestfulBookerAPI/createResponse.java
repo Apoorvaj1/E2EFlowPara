@@ -14,8 +14,6 @@ public class createResponse {
     private int bookingid;
     private Booking booking;
 
-    private BookingDates bookingdates;
-
     @Data
     public static class Booking {
         private String firstname;

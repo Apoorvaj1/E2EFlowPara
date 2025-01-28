@@ -1,11 +1,13 @@
 package org.selenium.aj34.utils;
 
 import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.testng.annotations.DataProvider;
 
 import java.io.FileInputStream;
+import java.util.Hashtable;
 
 public class excelReader {
 
@@ -14,8 +16,8 @@ public class excelReader {
         return sheetData(System.getProperty("user.dir") + "\\src\\test\\resources\\DemoPlaces.xlsx", "Places");
     }
 
-    public String[][] sheetData(String fileName, String sheet) {
-        String[][] data = null;
+    public Object[][] sheetData(String fileName, String sheet) {
+        Object[][] data = null;
         try {
             FileInputStream file = new FileInputStream(fileName);
             XSSFWorkbook workbook = new XSSFWorkbook(file);
@@ -24,27 +26,42 @@ public class excelReader {
             int rowCount = sheet1.getPhysicalNumberOfRows();  // Get physical row count
             int cellCount = sheet1.getRow(0).getPhysicalNumberOfCells();  // Get physical cell count
 
-            data = new String[rowCount - 1][cellCount];
+            // Initialize Object[][] to hold the data
 
+            data = new Object[rowCount - 1][1];
+            // Read column headers
+
+            String[] headers = new String[cellCount];
+            Row headerRow = sheet1.getRow(0);
+            for (int col = 0; col < cellCount; col++) {
+                headers[col] = headerRow.getCell(col).getStringCellValue();
+            }
             for (int row = 1; row < rowCount; row++) {
+                Hashtable<String, String> table = new Hashtable<>();
+                Row dataRow = sheet1.getRow(row);
                 for (int col = 0; col < cellCount; col++) {
-                    if (sheet1.getRow(row).getCell(col) != null) {
-                        Cell cell = sheet1.getRow(row).getCell(col);
+                    Cell cell = dataRow.getCell(col);
+                    String value = "";
+
+                    if (cell != null) {
                         switch (cell.getCellType()) {
                             case STRING:
-                                data[row - 1][col] = cell.getStringCellValue();
+                                value = cell.getStringCellValue();
                                 break;
                             case NUMERIC:
-                                data[row - 1][col] = String.valueOf(cell.getNumericCellValue());
+                                value = String.valueOf(cell.getNumericCellValue());
                                 break;
                             case BOOLEAN:
-                                data[row - 1][col] = String.valueOf(cell.getBooleanCellValue());
+                                value = String.valueOf(cell.getBooleanCellValue());
                                 break;
                             default:
-                                data[row - 1][col] = "";  // If the cell is empty or of an unknown type
+                                value = "";  // If the cell is empty or of an unknown type
                         }
                     }
+                    table.put(headers[col], value); // Add column header and cell value to Hashtable
                 }
+                // Add the Hashtable to the data array
+                data[row - 1][0] = table;
             }
             workbook.close();
         } catch (Exception e) {
