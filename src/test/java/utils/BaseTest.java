@@ -40,7 +40,8 @@ public class BaseTest {
 
     @BeforeClass
     public void initializeBrowser(){
-        String browserName = org.selenium.aj34.utils.configReader.readKey("browser");
+        //String browserName = org.selenium.aj34.utils.configReader.readKey("browser");
+        String browserName = System.getProperty("browser","chrome");
         WebDriver driver;
         switch (browserName.toLowerCase()){
             case "edge":

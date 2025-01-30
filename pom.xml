@@ -22,8 +22,6 @@
       <id>UI_testing</id>
 
       <build>
-        <!-- To define the plugin version in your parent POM -->
-        <pluginManagement>
           <plugins>
             <plugin>
               <groupId>org.apache.maven.plugins</groupId>
@@ -39,10 +37,14 @@
                 <suiteXmlFiles>
                   <suiteXmlFile>testng-UI.xml</suiteXmlFile>
                 </suiteXmlFiles>
+
+                <systemPropertyVariables>
+                  <!--suppress UnresolvedMavenProperty -->
+                  <whichBrowser>${browser}</whichBrowser>
+                </systemPropertyVariables>
               </configuration>
             </plugin>
           </plugins>
-        </pluginManagement>
       </build>
     </profile>
 
@@ -50,8 +52,6 @@
       <id>API_testing</id>
 
       <build>
-        <!-- To define the plugin version in your parent POM -->
-        <pluginManagement>
           <plugins>
             <plugin>
               <groupId>org.apache.maven.plugins</groupId>
@@ -70,7 +70,6 @@
               </configuration>
             </plugin>
           </plugins>
-        </pluginManagement>
       </build>
     </profile>
 
@@ -78,8 +77,6 @@
       <id>Regression</id>
 
       <build>
-        <!-- To define the plugin version in your parent POM -->
-        <pluginManagement>
           <plugins>
             <plugin>
               <groupId>org.apache.maven.plugins</groupId>
@@ -95,10 +92,14 @@
                 <suiteXmlFiles>
                   <suiteXmlFile>Regression.xml</suiteXmlFile>
                 </suiteXmlFiles>
+
+                <systemPropertyVariables>
+                  <!--suppress UnresolvedMavenProperty -->
+                  <whichBrowser>${browser}</whichBrowser>
+                </systemPropertyVariables>
               </configuration>
             </plugin>
           </plugins>
-        </pluginManagement>
       </build>
     </profile>
 
@@ -160,6 +161,11 @@
           <argLine>
             -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
           </argLine>
+
+          <systemPropertyVariables>
+            <!--suppress UnresolvedMavenProperty -->
+            <browser>${browser}</browser>
+          </systemPropertyVariables>
         </configuration>
         <dependencies>
           <dependency>
