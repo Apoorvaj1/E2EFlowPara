@@ -1,9 +1,36 @@
-[INFO ] 2025-01-28 14:26:44.122 [main] Utils - [TestNG] Running:
-  C:\Users\apoor\AppData\Local\JetBrains\IdeaIC2023.2\temp-testng-customsuite.xml
-
-[INFO ] 2025-01-28 14:28:36.807 [main] Utils - [TestNG] Running:
-  C:\Users\apoor\AppData\Local\JetBrains\IdeaIC2023.2\temp-testng-customsuite.xml
-
-[INFO ] 2025-01-28 14:30:26.727 [main] Utils - [TestNG] Running:
-  C:\Users\apoor\AppData\Local\JetBrains\IdeaIC2023.2\temp-testng-customsuite.xml
-
+[ERROR] 2025-01-30 13:53:31.947 [main] AzureBlobClient - Failed to create Azure Blob Storage client
+java.lang.IllegalArgumentException: Invalid URL format. URL: null
+	at com.azure.storage.blob.BlobUrlParts.parse(BlobUrlParts.java:349) ~[azure-storage-blob-12.28.0.jar:12.28.0]
+	at com.azure.storage.blob.implementation.util.BuilderHelper.httpsValidation(BuilderHelper.java:192) ~[azure-storage-blob-12.28.0.jar:12.28.0]
+	at com.azure.storage.blob.implementation.util.BuilderHelper.buildPipeline(BuilderHelper.java:123) ~[azure-storage-blob-12.28.0.jar:12.28.0]
+	at com.azure.storage.blob.BlobServiceClientBuilder.buildAsyncClient(BlobServiceClientBuilder.java:137) ~[azure-storage-blob-12.28.0.jar:12.28.0]
+	at com.azure.storage.blob.BlobServiceClientBuilder.buildClient(BlobServiceClientBuilder.java:116) ~[azure-storage-blob-12.28.0.jar:12.28.0]
+	at com.aventstack.chaintest.storage.AzureBlobClient.getServiceClient(AzureBlobClient.java:63) ~[chaintest-core-1.0.1.jar:?]
+	at com.aventstack.chaintest.storage.AzureBlobClient.getContainerClient(AzureBlobClient.java:71) ~[chaintest-core-1.0.1.jar:?]
+	at com.aventstack.chaintest.storage.AzureBlobClient.create(AzureBlobClient.java:47) ~[chaintest-core-1.0.1.jar:?]
+	at com.aventstack.chaintest.service.ChainPluginService.startStorageService(ChainPluginService.java:135) ~[chaintest-core-1.0.1.jar:?]
+	at com.aventstack.chaintest.service.ChainPluginService.init(ChainPluginService.java:99) ~[chaintest-core-1.0.1.jar:?]
+	at java.util.Optional.ifPresent(Optional.java:178) [?:?]
+	at com.aventstack.chaintest.service.ChainPluginService.start(ChainPluginService.java:90) [chaintest-core-1.0.1.jar:?]
+	at com.aventstack.chaintest.plugins.ChainTestListener.onExecutionStart(ChainTestListener.java:29) [chaintest-testng-1.0.1.jar:?]
+	at org.testng.TestNG.runExecutionListeners(TestNG.java:1129) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1074) [testng-7.10.2.jar:7.10.2]
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308) [surefire-testng-3.1.2.jar:3.1.2]
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71) [surefire-testng-3.1.2.jar:3.1.2]
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113) [surefire-testng-3.1.2.jar:3.1.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385) [surefire-booter-3.1.2.jar:3.1.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162) [surefire-booter-3.1.2.jar:3.1.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507) [surefire-booter-3.1.2.jar:3.1.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495) [surefire-booter-3.1.2.jar:3.1.2]
+Caused by: java.net.MalformedURLException: Cannot invoke "String.length()" because "spec" is null
+	at java.net.URL.<init>(URL.java:806) ~[?:?]
+	at java.net.URL.<init>(URL.java:654) ~[?:?]
+	at java.net.URL.<init>(URL.java:590) ~[?:?]
+	at com.azure.storage.blob.BlobUrlParts.parse(BlobUrlParts.java:347) ~[azure-storage-blob-12.28.0.jar:12.28.0]
+	... 21 more
+Caused by: java.lang.NullPointerException: Cannot invoke "String.length()" because "spec" is null
+	at java.net.URL.<init>(URL.java:712) ~[?:?]
+	at java.net.URL.<init>(URL.java:654) ~[?:?]
+	at java.net.URL.<init>(URL.java:590) ~[?:?]
+	at com.azure.storage.blob.BlobUrlParts.parse(BlobUrlParts.java:347) ~[azure-storage-blob-12.28.0.jar:12.28.0]
+	... 21 more
