@@ -40,7 +40,7 @@
 
                 <systemPropertyVariables>
                   <!--suppress UnresolvedMavenProperty -->
-                  <whichBrowser>${browser}</whichBrowser>
+                  <whichBrowser>${browserName}</whichBrowser>
                 </systemPropertyVariables>
               </configuration>
             </plugin>
@@ -95,7 +95,7 @@
 
                 <systemPropertyVariables>
                   <!--suppress UnresolvedMavenProperty -->
-                  <whichBrowser>${browser}</whichBrowser>
+                  <whichBrowser>${browserName}</whichBrowser>
                 </systemPropertyVariables>
               </configuration>
             </plugin>
@@ -164,7 +164,7 @@
 
           <systemPropertyVariables>
             <!--suppress UnresolvedMavenProperty -->
-            <browser>${browser}</browser>
+            <browser>${browserName}</browser>
           </systemPropertyVariables>
         </configuration>
         <dependencies>
