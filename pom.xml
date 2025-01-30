@@ -164,7 +164,7 @@
 
           <systemPropertyVariables>
             <!--suppress UnresolvedMavenProperty -->
-            <browser>${browserName}</browser>
+            <whichBrowser>${browserName}</whichBrowser>
           </systemPropertyVariables>
         </configuration>
         <dependencies>
