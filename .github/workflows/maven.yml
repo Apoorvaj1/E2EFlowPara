@@ -21,6 +21,6 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Execute Tests
-      run: mvn clean test -P API_testing -X
+      run: mvn clean test -P UI_testing -DbrowserName=edge -X
 
 
