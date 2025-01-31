@@ -8,8 +8,8 @@ on:
     branches: [ "QA" ]
 
   schedule:
-    - cron: 05 11 * * *
-    - cron: 12 11 * * *
+    - cron: 18 11 * * *
+    - cron: 20 11 * * *
 
 jobs:
   build:
@@ -25,6 +25,6 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Execute Tests
-      run: mvn clean test -P UI_testing -DbrowserName=edge -X
+      run: mvn clean test -P API_testing
 
 
