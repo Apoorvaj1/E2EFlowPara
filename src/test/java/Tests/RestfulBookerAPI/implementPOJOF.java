@@ -51,8 +51,8 @@ public class implementPOJOF {
 
        ObjectMapper mapper = new ObjectMapper();
         usePOJO pojo = new usePOJO();
-        pojo.setUsername("admin");
         pojo.setPassword("password123");
+        pojo.setUsername("admin");
         String json = mapper.writeValueAsString(pojo);
 
 

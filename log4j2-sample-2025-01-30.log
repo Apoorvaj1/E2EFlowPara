@@ -1,0 +1,108 @@
+[ERROR] 2025-01-30 13:53:31.947 [main] AzureBlobClient - Failed to create Azure Blob Storage client
+java.lang.IllegalArgumentException: Invalid URL format. URL: null
+	at com.azure.storage.blob.BlobUrlParts.parse(BlobUrlParts.java:349) ~[azure-storage-blob-12.28.0.jar:12.28.0]
+	at com.azure.storage.blob.implementation.util.BuilderHelper.httpsValidation(BuilderHelper.java:192) ~[azure-storage-blob-12.28.0.jar:12.28.0]
+	at com.azure.storage.blob.implementation.util.BuilderHelper.buildPipeline(BuilderHelper.java:123) ~[azure-storage-blob-12.28.0.jar:12.28.0]
+	at com.azure.storage.blob.BlobServiceClientBuilder.buildAsyncClient(BlobServiceClientBuilder.java:137) ~[azure-storage-blob-12.28.0.jar:12.28.0]
+	at com.azure.storage.blob.BlobServiceClientBuilder.buildClient(BlobServiceClientBuilder.java:116) ~[azure-storage-blob-12.28.0.jar:12.28.0]
+	at com.aventstack.chaintest.storage.AzureBlobClient.getServiceClient(AzureBlobClient.java:63) ~[chaintest-core-1.0.1.jar:?]
+	at com.aventstack.chaintest.storage.AzureBlobClient.getContainerClient(AzureBlobClient.java:71) ~[chaintest-core-1.0.1.jar:?]
+	at com.aventstack.chaintest.storage.AzureBlobClient.create(AzureBlobClient.java:47) ~[chaintest-core-1.0.1.jar:?]
+	at com.aventstack.chaintest.service.ChainPluginService.startStorageService(ChainPluginService.java:135) ~[chaintest-core-1.0.1.jar:?]
+	at com.aventstack.chaintest.service.ChainPluginService.init(ChainPluginService.java:99) ~[chaintest-core-1.0.1.jar:?]
+	at java.util.Optional.ifPresent(Optional.java:178) [?:?]
+	at com.aventstack.chaintest.service.ChainPluginService.start(ChainPluginService.java:90) [chaintest-core-1.0.1.jar:?]
+	at com.aventstack.chaintest.plugins.ChainTestListener.onExecutionStart(ChainTestListener.java:29) [chaintest-testng-1.0.1.jar:?]
+	at org.testng.TestNG.runExecutionListeners(TestNG.java:1129) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1074) [testng-7.10.2.jar:7.10.2]
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308) [surefire-testng-3.1.2.jar:3.1.2]
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71) [surefire-testng-3.1.2.jar:3.1.2]
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113) [surefire-testng-3.1.2.jar:3.1.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385) [surefire-booter-3.1.2.jar:3.1.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162) [surefire-booter-3.1.2.jar:3.1.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507) [surefire-booter-3.1.2.jar:3.1.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495) [surefire-booter-3.1.2.jar:3.1.2]
+Caused by: java.net.MalformedURLException: Cannot invoke "String.length()" because "spec" is null
+	at java.net.URL.<init>(URL.java:806) ~[?:?]
+	at java.net.URL.<init>(URL.java:654) ~[?:?]
+	at java.net.URL.<init>(URL.java:590) ~[?:?]
+	at com.azure.storage.blob.BlobUrlParts.parse(BlobUrlParts.java:347) ~[azure-storage-blob-12.28.0.jar:12.28.0]
+	... 21 more
+Caused by: java.lang.NullPointerException: Cannot invoke "String.length()" because "spec" is null
+	at java.net.URL.<init>(URL.java:712) ~[?:?]
+	at java.net.URL.<init>(URL.java:654) ~[?:?]
+	at java.net.URL.<init>(URL.java:590) ~[?:?]
+	at com.azure.storage.blob.BlobUrlParts.parse(BlobUrlParts.java:347) ~[azure-storage-blob-12.28.0.jar:12.28.0]
+	... 21 more
+[INFO ] 2025-01-30 15:58:50.366 [main] RegisterTest - --------------Started-------------------
+[INFO ] 2025-01-30 15:58:50.614 [main] LoginTestValidCred - --------------Started-------------------
+[INFO ] 2025-01-30 15:58:50.627 [main] LoginTestInvalidCred - --------------Started-------------------
+[INFO ] 2025-01-30 15:59:52.257 [main] RegisterTest - --------------Started-------------------
+[INFO ] 2025-01-30 15:59:52.441 [main] LoginTestValidCred - --------------Started-------------------
+[INFO ] 2025-01-30 15:59:52.453 [main] LoginTestInvalidCred - --------------Started-------------------
+[INFO ] 2025-01-30 16:02:08.524 [main] RegisterTest - --------------Started-------------------
+[INFO ] 2025-01-30 16:02:08.752 [main] LoginTestValidCred - --------------Started-------------------
+[INFO ] 2025-01-30 16:02:08.760 [main] LoginTestInvalidCred - --------------Started-------------------
+[INFO ] 2025-01-30 16:05:08.795 [main] RegisterTest - --------------Started-------------------
+[INFO ] 2025-01-30 16:05:09.033 [main] LoginTestValidCred - --------------Started-------------------
+[INFO ] 2025-01-30 16:05:09.046 [main] LoginTestInvalidCred - --------------Started-------------------
+[INFO ] 2025-01-30 16:06:13.349 [main] RegisterTest - --------------Started-------------------
+[INFO ] 2025-01-30 16:06:23.766 [main] RegisterTest - --------------FINISHED-------------------
+[INFO ] 2025-01-30 16:06:35.411 [main] LoginTestValidCred - --------------Started-------------------
+[INFO ] 2025-01-30 16:06:42.202 [main] LoginTestValidCred - --------------FINISHED-------------------
+[INFO ] 2025-01-30 16:06:52.089 [main] LoginTestInvalidCred - --------------Started-------------------
+[INFO ] 2025-01-30 16:06:55.265 [main] LoginTestInvalidCred - --------------FINISHED-------------------
+[INFO ] 2025-01-30 16:07:02.677 [main] LogoutTest - --------------Started-------------------
+[INFO ] 2025-01-30 16:07:07.491 [main] LogoutTest - --------------FINISHED-------------------
+[INFO ] 2025-01-30 16:07:11.753 [main] RegisterExistingUser - --------------Started-------------------
+[INFO ] 2025-01-30 16:07:15.002 [main] RegisterExistingUser - --------------FINISHED-------------------
+[INFO ] 2025-01-30 16:07:19.293 [main] ContactusTest - --------------Started-------------------
+[INFO ] 2025-01-30 16:07:37.874 [main] ContactusTest - --------------FINISHED-------------------
+[INFO ] 2025-01-30 16:08:03.354 [main] ProductTest_SearchBox - --------------Started-------------------
+[INFO ] 2025-01-30 16:08:07.249 [main] ProductTest_SearchBox - --------------FINISHED-------------------
+[INFO ] 2025-01-30 16:08:12.336 [main] SubscriptionTest - --------------Started-------------------
+[INFO ] 2025-01-30 16:08:14.965 [main] SubscriptionTest - --------------FINISHED-------------------
+[INFO ] 2025-01-30 16:08:21.379 [main] SubscriptionCartTest - --------------Started-------------------
+[INFO ] 2025-01-30 16:08:24.802 [main] SubscriptionCartTest - --------------FINISHED-------------------
+[INFO ] 2025-01-30 16:08:30.391 [main] RegisterTest - --------------Started-------------------
+[INFO ] 2025-01-30 16:08:38.798 [main] RegisterTest - --------------FINISHED-------------------
+[INFO ] 2025-01-30 16:15:31.699 [main] RegisterTest - --------------Started-------------------
+[INFO ] 2025-01-30 16:15:46.031 [main] RegisterTest - --------------FINISHED-------------------
+[INFO ] 2025-01-30 16:15:52.108 [main] LoginTestValidCred - --------------Started-------------------
+[INFO ] 2025-01-30 16:15:55.589 [main] LoginTestValidCred - --------------FINISHED-------------------
+[INFO ] 2025-01-30 16:16:01.464 [main] LoginTestInvalidCred - --------------Started-------------------
+[INFO ] 2025-01-30 16:16:04.708 [main] LoginTestInvalidCred - --------------FINISHED-------------------
+[INFO ] 2025-01-30 16:16:10.320 [main] LogoutTest - --------------Started-------------------
+[INFO ] 2025-01-30 16:16:16.213 [main] LogoutTest - --------------FINISHED-------------------
+[INFO ] 2025-01-30 16:16:21.753 [main] RegisterExistingUser - --------------Started-------------------
+[INFO ] 2025-01-30 16:16:25.371 [main] RegisterExistingUser - --------------FINISHED-------------------
+[INFO ] 2025-01-30 16:16:39.874 [main] ContactusTest - --------------Started-------------------
+[INFO ] 2025-01-30 16:16:58.184 [main] ContactusTest - --------------FINISHED-------------------
+[INFO ] 2025-01-30 16:17:19.407 [main] ProductTest_SearchBox - --------------Started-------------------
+[INFO ] 2025-01-30 16:17:35.266 [main] ProductTest_SearchBox - --------------FINISHED-------------------
+[INFO ] 2025-01-30 16:17:41.053 [main] SubscriptionTest - --------------Started-------------------
+[INFO ] 2025-01-30 16:17:43.356 [main] SubscriptionTest - --------------FINISHED-------------------
+[INFO ] 2025-01-30 16:17:49.919 [main] SubscriptionCartTest - --------------Started-------------------
+[INFO ] 2025-01-30 16:17:53.402 [main] SubscriptionCartTest - --------------FINISHED-------------------
+[INFO ] 2025-01-30 16:17:59.039 [main] RegisterTest - --------------Started-------------------
+[INFO ] 2025-01-30 16:18:09.357 [main] RegisterTest - --------------FINISHED-------------------
+[INFO ] 2025-01-30 16:36:11.244 [main] RegisterTest - --------------Started-------------------
+[INFO ] 2025-01-30 16:36:22.489 [main] RegisterTest - --------------FINISHED-------------------
+[INFO ] 2025-01-30 16:36:29.132 [main] LoginTestValidCred - --------------Started-------------------
+[INFO ] 2025-01-30 16:36:33.312 [main] LoginTestValidCred - --------------FINISHED-------------------
+[INFO ] 2025-01-30 16:36:41.469 [main] LoginTestInvalidCred - --------------Started-------------------
+[INFO ] 2025-01-30 16:36:44.201 [main] LoginTestInvalidCred - --------------FINISHED-------------------
+[INFO ] 2025-01-30 16:36:56.798 [main] LogoutTest - --------------Started-------------------
+[INFO ] 2025-01-30 16:37:03.470 [main] LogoutTest - --------------FINISHED-------------------
+[INFO ] 2025-01-30 16:37:13.411 [main] RegisterExistingUser - --------------Started-------------------
+[INFO ] 2025-01-30 16:37:16.652 [main] RegisterExistingUser - --------------FINISHED-------------------
+[INFO ] 2025-01-30 16:37:24.028 [main] ContactusTest - --------------Started-------------------
+[INFO ] 2025-01-30 16:37:42.631 [main] ContactusTest - --------------FINISHED-------------------
+[INFO ] 2025-01-30 16:38:10.577 [main] ProductTest_SearchBox - --------------Started-------------------
+[INFO ] 2025-01-30 16:38:13.837 [main] ProductTest_SearchBox - --------------FINISHED-------------------
+[INFO ] 2025-01-30 16:38:19.981 [main] SubscriptionTest - --------------Started-------------------
+[INFO ] 2025-01-30 16:38:22.333 [main] SubscriptionTest - --------------FINISHED-------------------
+[INFO ] 2025-01-30 16:38:28.624 [main] SubscriptionCartTest - --------------Started-------------------
+[INFO ] 2025-01-30 16:38:32.636 [main] SubscriptionCartTest - --------------FINISHED-------------------
+[INFO ] 2025-01-30 16:38:42.355 [main] RegisterTest - --------------Started-------------------
+[INFO ] 2025-01-30 16:38:55.426 [main] RegisterTest - --------------FINISHED-------------------
