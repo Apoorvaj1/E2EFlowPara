@@ -4,3 +4,43 @@
 [INFO ] 2025-01-31 08:23:24.322 [main] Utils - [TestNG] Running:
   C:\Users\apoor\AppData\Local\JetBrains\IdeaIC2023.2\temp-testng-customsuite.xml
 
+[INFO ] 2025-01-31 14:06:40.428 [main] RegisterTest - --------------Started-------------------
+[INFO ] 2025-01-31 14:06:51.186 [main] RegisterTest - --------------FINISHED-------------------
+[INFO ] 2025-01-31 14:06:57.707 [main] LoginTestValidCred - --------------Started-------------------
+[INFO ] 2025-01-31 14:07:00.973 [main] LoginTestValidCred - --------------FINISHED-------------------
+[INFO ] 2025-01-31 14:07:07.015 [main] LoginTestInvalidCred - --------------Started-------------------
+[INFO ] 2025-01-31 14:07:09.843 [main] LoginTestInvalidCred - --------------FINISHED-------------------
+[INFO ] 2025-01-31 14:07:15.271 [main] LogoutTest - --------------Started-------------------
+[INFO ] 2025-01-31 14:07:19.847 [main] LogoutTest - --------------FINISHED-------------------
+[INFO ] 2025-01-31 14:07:25.728 [main] RegisterExistingUser - --------------Started-------------------
+[INFO ] 2025-01-31 14:07:29.771 [main] RegisterExistingUser - --------------FINISHED-------------------
+[INFO ] 2025-01-31 14:07:36.182 [main] ContactusTest - --------------Started-------------------
+[INFO ] 2025-01-31 14:07:54.709 [main] ContactusTest - --------------FINISHED-------------------
+[INFO ] 2025-01-31 14:08:30.138 [main] ProductTest_SearchBox - --------------Started-------------------
+[INFO ] 2025-01-31 14:08:34.834 [main] ProductTest_SearchBox - --------------FINISHED-------------------
+[INFO ] 2025-01-31 14:08:38.806 [main] SubscriptionTest - --------------Started-------------------
+[INFO ] 2025-01-31 14:09:12.522 [main] SubscriptionTest - --------------FINISHED-------------------
+[INFO ] 2025-01-31 14:09:41.560 [main] SubscriptionCartTest - --------------Started-------------------
+[INFO ] 2025-01-31 14:09:45.578 [main] SubscriptionCartTest - --------------FINISHED-------------------
+[INFO ] 2025-01-31 14:09:51.634 [main] RegisterTest - --------------Started-------------------
+[INFO ] 2025-01-31 14:10:00.880 [main] RegisterTest - --------------FINISHED-------------------
+[INFO ] 2025-01-31 15:49:51.286 [main] RegisterTest - --------------Started-------------------
+[INFO ] 2025-01-31 15:50:08.305 [main] RegisterTest - --------------FINISHED-------------------
+[INFO ] 2025-01-31 15:50:29.511 [main] LoginTestValidCred - --------------Started-------------------
+[INFO ] 2025-01-31 15:50:34.730 [main] LoginTestValidCred - --------------FINISHED-------------------
+[INFO ] 2025-01-31 15:50:40.709 [main] LoginTestInvalidCred - --------------Started-------------------
+[INFO ] 2025-01-31 15:50:46.946 [main] LoginTestInvalidCred - --------------FINISHED-------------------
+[INFO ] 2025-01-31 15:52:12.670 [main] LogoutTest - --------------Started-------------------
+[INFO ] 2025-01-31 15:53:44.162 [main] LogoutTest - --------------FINISHED-------------------
+[INFO ] 2025-01-31 15:53:50.191 [main] RegisterExistingUser - --------------Started-------------------
+[INFO ] 2025-01-31 15:53:53.273 [main] RegisterExistingUser - --------------FINISHED-------------------
+[INFO ] 2025-01-31 15:54:06.743 [main] ContactusTest - --------------Started-------------------
+[INFO ] 2025-01-31 15:54:23.474 [main] ContactusTest - --------------FINISHED-------------------
+[INFO ] 2025-01-31 15:54:49.202 [main] ProductTest_SearchBox - --------------Started-------------------
+[INFO ] 2025-01-31 15:54:52.616 [main] ProductTest_SearchBox - --------------FINISHED-------------------
+[INFO ] 2025-01-31 15:54:57.759 [main] SubscriptionTest - --------------Started-------------------
+[INFO ] 2025-01-31 15:55:00.107 [main] SubscriptionTest - --------------FINISHED-------------------
+[INFO ] 2025-01-31 15:55:03.920 [main] SubscriptionCartTest - --------------Started-------------------
+[INFO ] 2025-01-31 15:55:10.403 [main] SubscriptionCartTest - --------------FINISHED-------------------
+[INFO ] 2025-01-31 15:55:17.939 [main] RegisterTest - --------------Started-------------------
+[INFO ] 2025-01-31 15:55:29.504 [main] RegisterTest - --------------FINISHED-------------------
