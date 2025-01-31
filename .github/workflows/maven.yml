@@ -6,10 +6,9 @@ on:
     branches: [ "QA" ]
   pull_request:
     branches: [ "QA" ]
-
   schedule:
-    - cron: 18 11 * * *
-    - cron: 20 11 * * *
+    - cron: "28 11 * * *"
+    - cron: "20 11 * * *"
 
 jobs:
   build:
