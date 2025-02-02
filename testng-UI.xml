@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="All Test Suite">
+<suite name="All Test Suite" parallel="tests" thread-count="2">
     <listeners>
         <listener class-name="utils.TestListener"/>
 <!--        <listener class-name="com.aventstack.chaintest.plugins.ChainTestListener"/>-->
     </listeners>
-    <test name="Demo">
+    <test name="edgeTest">
+        <parameter name="os" value="windows"/>
+        <parameter name="browser" value="edge"/>
         <classes>
             <class name="Tests.RegisterTest"/>
             <class name="Tests.LoginTestValidCred"/>
@@ -20,15 +22,29 @@
             <class name="Tests.ProductTest">
                 <methods>
                     <include name="addProductAndVerify"/>
+                    <include name="checkoutDetails"/>
+                    <include name="placeOrder"/>
                 </methods>
             </class>
+            <class name="Tests.PaymentTest"/>
 
         </classes>
     </test>
 
-    <test name="Demo1">
+    <test name="chromeTest">
+        <parameter name="os" value="windows"/>
+        <parameter name="browser" value="chrome"/>
         <classes>
             <class name="Tests.RegisterTest"/>
+            <class name="Tests.LoginTestValidCred"/>
+            <class name="Tests.LoginTestInvalidCred"/>
+            <class name="Tests.LogoutTest"/>
+            <class name="Tests.RegisterExistingUser"/>
+            <class name="Tests.ContactusTest"/>
+            <class name="Tests.ProductTest"/>
+            <class name="Tests.ProductTest_SearchBox"/>
+            <class name="Tests.SubscriptionTest"/>
+            <class name="Tests.SubscriptionCartTest"/>
             <class name="Tests.ProductTest">
                 <methods>
                     <include name="addProductAndVerify"/>
@@ -37,7 +53,6 @@
                 </methods>
             </class>
             <class name="Tests.PaymentTest"/>
-
         </classes>
     </test>
 </suite>

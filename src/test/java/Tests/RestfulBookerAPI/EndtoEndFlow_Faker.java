@@ -100,7 +100,6 @@ public class EndtoEndFlow_Faker {
         System.out.println(id_2nd);
         response.then().body("[0].bookingid",Matchers.greaterThan(10));
 
-
     }
 
     @Test(dependsOnMethods = "createToken",dataProvider = "demoData1",dataProviderClass = dataProviderPayload.class)

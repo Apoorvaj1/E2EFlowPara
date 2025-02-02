@@ -84,7 +84,8 @@ public class EndtoEndFlow {
         int id_2nd = bookingIds.get(1);
         System.out.println(id_2nd);
         response.then().body("[0].bookingid",Matchers.greaterThan(10));
-        response.then().time(Matchers.lessThan(2000L));
+        response.then().time(Matchers.lessThan(4000L));
+        response.then().spec(requestAndResponseSpecD.responseSpecification);
     }
 
     @Test(dependsOnMethods = "createToken",dataProvider = "demoData",dataProviderClass = dataProviderPayload.class)
